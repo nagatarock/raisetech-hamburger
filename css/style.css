@@ -5,9 +5,17 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #f6efdb;
 }
 
 h1 {
   color: gray;
+}
+
+.search {
+  background-image: url(/img/index_search_01.png);
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  background-size: auto 60%;
 }
 /*# sourceMappingURL=style.css.map */
