@@ -1,13 +1,16 @@
 @charset "UTF-8";
+body{
+    max-width: 1000px;
+}
 header{
     width: 80%;
     display: flex;
     justify-content: space-between;
     background-color: #f6efdb;
-}
-h1{
-    color:gray;
-}
+    h1{
+        color:gray;
+    }
+
 .search{
     background-image: url(/img/index_search_01.png);
     background-repeat: no-repeat;
@@ -18,7 +21,21 @@ h1{
     width: 200px;
     height: 20px;
 }
-.pic img{
+}
+.top_pic{
+    .pic img{
+        width: 80%;
+    }
+}
+.container{
     width: 80%;
-    height: auto;
+    background-color: skyblue;
+}
+.sidebar{
+    float: right;
+    width: 20%;
+    background-color: red;
+}
+footer{
+    background-color: #956d30;
 }

@@ -1,3 +1,7 @@
+body {
+  max-width: 1000px;
+}
+
 header {
   width: 80%;
   display: -webkit-box;
@@ -9,11 +13,11 @@ header {
   background-color: #f6efdb;
 }
 
-h1 {
+header h1 {
   color: gray;
 }
 
-.search {
+header .search {
   background-image: url(/img/index_search_01.png);
   background-repeat: no-repeat;
   background-position: 4px center;
@@ -24,8 +28,22 @@ h1 {
   height: 20px;
 }
 
-.pic img {
+.top_pic .pic img {
   width: 80%;
-  height: auto;
+}
+
+.container {
+  width: 80%;
+  background-color: skyblue;
+}
+
+.sidebar {
+  float: right;
+  width: 20%;
+  background-color: red;
+}
+
+footer {
+  background-color: #956d30;
 }
 /*# sourceMappingURL=style.css.map */
