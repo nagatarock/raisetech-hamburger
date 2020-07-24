@@ -1,5 +1,6 @@
 body {
   max-width: 1000px;
+  margin: 0;
 }
 
 header {
@@ -45,7 +46,66 @@ header .search {
 
 .container {
   width: 80%;
+  height: 725px;
   background-color: skyblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container h2 {
+  font-size: 33px;
+  color: white;
+  padding-left: 14px;
+  padding-top: 20px;
+}
+
+.container .c_left {
+  background-image: url(/img/take_out.png);
+  width: 325px;
+  height: 620px;
+  background-size: cover;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-left: 57px;
+  position: relative;
+}
+
+.container .c_left .c_left_box {
+  width: 304px;
+  height: 90px;
+  border-style: none;
+  border-width: medium;
+  background-color: rgba(247, 245, 245, 0.9);
+  position: absolute;
+  top: 519px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.container .c_left .c_left_box h3 {
+  font-size: 90%;
+  font-weight: 100;
+}
+
+.container .c_left .c_left_box p {
+  font-size: 10%;
+}
+
+.container .c_right {
+  background-image: url(/img/eat_in.png);
+  width: 325px;
+  height: 621px;
+  background-size: cover;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-right: 58px;
 }
 
 .sidebar {
