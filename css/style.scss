@@ -23,6 +23,13 @@ header{
 }
 }
 .top_pic{
+    position: relative;
+    .text{
+        color: white;
+        position: absolute;
+        top:141px;
+        left:45px;
+    }
     .pic img{
         width: 80%;
     }

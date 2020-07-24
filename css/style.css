@@ -28,6 +28,17 @@ header .search {
   height: 20px;
 }
 
+.top_pic {
+  position: relative;
+}
+
+.top_pic .text {
+  color: white;
+  position: absolute;
+  top: 141px;
+  left: 45px;
+}
+
 .top_pic .pic img {
   width: 80%;
 }
