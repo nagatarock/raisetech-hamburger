@@ -92,10 +92,11 @@ header{
     img{
     width: 80%;
     height: 337px;
+    background-color: rgba(0, 0, 0, 0.6);
     }
     .m_container{
         position: absolute;
-        background-color: rgba(0, 0, 0, 0.6) ;
+        background-color: rgba(0, 0, 0, 0.5) ;
         color: white;
         width: 494px;
         height: 337px;
@@ -105,12 +106,6 @@ header{
             transform: scale(0.7);
             font-weight: lighter;
         }
-    }
-    .m_space{
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.6) ;
-        width: 313px;
-        height: 337px;
     }
  
 }
