@@ -89,12 +89,16 @@ header .search {
 }
 
 .container .c_left .c_left_box h3 {
-  font-size: 90%;
+  margin-top: 12px;
+  margin-left: 12px;
+  font-size: 77%;
   font-weight: 100;
 }
 
 .container .c_left .c_left_box p {
-  font-size: 10%;
+  font-size: 10px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .container .c_right {
@@ -106,6 +110,31 @@ header .search {
       -ms-flex-pack: right;
           justify-content: right;
   margin-right: 58px;
+}
+
+.map {
+  position: relative;
+}
+
+.map img {
+  width: 807px;
+  height: 337px;
+}
+
+.map .m_container {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 494px;
+  height: 337px;
+}
+
+.map .m_container dd {
+  color: white;
+  font-size: 10px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  font-weight: lighter;
 }
 
 .sidebar {
