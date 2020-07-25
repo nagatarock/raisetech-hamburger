@@ -38,7 +38,6 @@ header{
 .container{
     width: 80%;
     height: 725px;
-    background-color: skyblue;
     display: flex;
     justify-content: space-between;
     h2{
@@ -89,9 +88,9 @@ header{
     }
 }
 .map{
-    position: relative;    
+    position: relative;
     img{
-    width: 807px;
+    width: 80%;
     height: 337px;
     }
     .m_container{
@@ -106,6 +105,12 @@ header{
             transform: scale(0.7);
             font-weight: lighter;
         }
+    }
+    .m_space{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6) ;
+        width: 313px;
+        height: 337px;
     }
  
 }

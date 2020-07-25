@@ -47,7 +47,6 @@ header .search {
 .container {
   width: 80%;
   height: 725px;
-  background-color: skyblue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,7 +116,7 @@ header .search {
 }
 
 .map img {
-  width: 807px;
+  width: 80%;
   height: 337px;
 }
 
@@ -135,6 +134,13 @@ header .search {
   -webkit-transform: scale(0.7);
           transform: scale(0.7);
   font-weight: lighter;
+}
+
+.map .m_space {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 313px;
+  height: 337px;
 }
 
 .sidebar {
