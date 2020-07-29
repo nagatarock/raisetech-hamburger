@@ -4,7 +4,7 @@ body{
     margin: 0;
 }
 header{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #FFF7EF;
@@ -26,7 +26,6 @@ header{
 }
 .top_pic{
     position: relative;
-    width: 80%;
     .text{
         color: white;
         position: absolute;
@@ -38,10 +37,10 @@ header{
     }
 }
 .container{
-    width: 80%;
     height: 725px;
     display: flex;
     justify-content: space-between;
+    padding-top: 62px;
     h2{
         font-size: 33px;
         color: white;
@@ -92,8 +91,8 @@ header{
 .map{
     position: relative;
     img{
-    width: 80%;
     height: 337px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     }
     .m_container{
@@ -158,4 +157,7 @@ footer{
     background-image: url(/img/footer_background.png);
     color: white;
     text-align: center ;
+}
+.flexbox{
+    display: flex;
 }

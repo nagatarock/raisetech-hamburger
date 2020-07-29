@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  width: 80%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,7 +32,6 @@ header .search {
 
 .top_pic {
   position: relative;
-  width: 80%;
 }
 
 .top_pic .text {
@@ -47,7 +46,6 @@ header .search {
 }
 
 .container {
-  width: 80%;
   height: 725px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,6 +53,7 @@ header .search {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 62px;
 }
 
 .container h2 {
@@ -118,8 +117,8 @@ header .search {
 }
 
 .map img {
-  width: 80%;
   height: 337px;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -191,5 +190,11 @@ footer {
   background-image: url(/img/footer_background.png);
   color: white;
   text-align: center;
+}
+
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
