@@ -7,8 +7,9 @@ header{
     width: 80%;
     display: flex;
     justify-content: space-between;
-    background-color: #f6efdb;
+    background-color: #FFF7EF;
     h1{
+        font-family: 'Roboto', sans-serif;
         color:gray;
     }
 
@@ -25,6 +26,7 @@ header{
 }
 .top_pic{
     position: relative;
+    width: 80%;
     .text{
         color: white;
         position: absolute;
@@ -32,7 +34,7 @@ header{
         left:45px;
     }
     .pic img{
-        width: 80%;
+        width: 100%;
     }
 }
 .container{
@@ -110,10 +112,43 @@ header{
  
 }
 .sidebar{
-    float: right;
     width: 20%;
-    background-color: red;
-}
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: #F2EDE9;
+    padding-left: 25px;
+    padding-top: 30px;
+    .menu{
+        font-size: 0.8rem;
+        list-style-type: none;
+        padding-left: 0;
+                    .burger{
+                    padding-top:     5px;
+                    padding-left:    10px;
+                    font-size:       0.7rem;
+                    list-style-type: none;
+                    line-height:     25px;
+                    }
+                    .side{
+                    padding-top:     5px;
+                    padding-left:    10px;
+                    font-size:       0.7rem;
+                    list-style-type: none;
+                    line-height:     25px;
+                    }
+                    .drink{
+                    padding-top:     5px;
+                    padding-left:    10px;
+                    font-size:       0.7rem;
+                    list-style-type: none;
+                    line-height:     25px;
+                    }
+     }
+     a{
+        text-decoration: none;
+     }
+    }
+
 footer{
     margin: 0;
     padding: 2rem 0;
