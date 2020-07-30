@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+.wrapper {
+  width: 80%;
+}
+
 header {
   width: 100%;
   display: -webkit-box;
@@ -15,6 +19,7 @@ header {
 }
 
 header h1 {
+  padding-left: 34px;
   font-family: 'Roboto', sans-serif;
   color: gray;
 }
@@ -26,8 +31,15 @@ header .search {
   background-size: auto 60%;
   border-radius: 3px;
   border-width: thin;
-  width: 200px;
+  width: 205px;
   height: 20px;
+}
+
+header .bottom {
+  border-radius: 3px;
+  border-width: thin;
+  width: 70px;
+  height: 25px;
 }
 
 .top_pic {

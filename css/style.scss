@@ -3,12 +3,16 @@ body{
     max-width: 1000px;
     margin: 0;
 }
+.wrapper{
+    width: 80%;
+}
 header{
     width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #FFF7EF;
     h1{
+        padding-left: 34px;
         font-family: 'Roboto', sans-serif;
         color:gray;
     }
@@ -20,8 +24,14 @@ header{
     background-size: auto 60%;
     border-radius: 3px;
     border-width: thin;
-    width: 200px;
+    width: 205px;
     height: 20px;
+}
+.bottom{
+    border-radius: 3px;
+    border-width: thin;
+    width: 70px;
+    height: 25px;
 }
 }
 .top_pic{
