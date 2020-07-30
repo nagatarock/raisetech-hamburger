@@ -9,6 +9,7 @@ body {
 
 header {
   width: 100%;
+  height: 112px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,9 +20,15 @@ header {
 }
 
 header h1 {
+  padding-top: 13px;
   padding-left: 34px;
   font-family: 'Roboto', sans-serif;
-  color: gray;
+  color: #707070;
+}
+
+header #form1 {
+  padding-top: 45px;
+  padding-right: 20px;
 }
 
 header .search {
@@ -29,17 +36,21 @@ header .search {
   background-repeat: no-repeat;
   background-position: 4px center;
   background-size: auto 60%;
-  border-radius: 3px;
+  border-radius: 6px;
   border-width: thin;
+  border-color: #707070;
   width: 205px;
   height: 20px;
 }
 
 header .bottom {
-  border-radius: 3px;
+  font-size: 10px;
+  border-radius: 6px;
   border-width: thin;
+  border-color: #707070;
   width: 70px;
   height: 25px;
+  color: #707070;
 }
 
 .top_pic {
@@ -155,38 +166,40 @@ header .bottom {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   background-color: #F2EDE9;
-  padding-left: 25px;
-  padding-top: 30px;
+  padding-left: 27px;
+  padding-top: 45px;
+  color: #707070;
 }
 
 .sidebar .menu {
-  font-size: 0.8rem;
+  padding-top: 30px;
+  font-size: 0.9rem;
   list-style-type: none;
   padding-left: 0;
 }
 
 .sidebar .menu .burger {
-  padding-top: 5px;
+  padding-top: 23px;
   padding-left: 10px;
   font-size: 0.7rem;
   list-style-type: none;
-  line-height: 25px;
+  line-height: 22px;
 }
 
 .sidebar .menu .side {
-  padding-top: 5px;
+  padding-top: 23px;
   padding-left: 10px;
   font-size: 0.7rem;
   list-style-type: none;
-  line-height: 25px;
+  line-height: 22px;
 }
 
 .sidebar .menu .drink {
-  padding-top: 5px;
+  padding-top: 23px;
   padding-left: 10px;
   font-size: 0.7rem;
   list-style-type: none;
-  line-height: 25px;
+  line-height: 22px;
 }
 
 .sidebar a {
