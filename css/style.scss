@@ -110,8 +110,9 @@ header{
 }
 .map{
     position: relative;
-    img{
     height: 337px;
+    img{
+    height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     }
@@ -119,10 +120,14 @@ header{
         position: absolute;
         background-color: rgba(0, 0, 0, 0.5) ;
         color: white;
-        width: 494px;
-        height: 337px;
-        dd{
-            color: white;
+        width: 415px;
+        height: 290px;
+        padding-left: 62px;
+        padding-top: 47px;
+        font-size: large;
+        line-height: 20px;
+        .m_container_text{
+            padding-left: 0;
             font-size: 10px;
             transform: scale(0.7);
             font-weight: lighter;
