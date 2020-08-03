@@ -1,0 +1,101 @@
+body{
+    max-width: 1000px;
+    margin: 0;
+}
+.wrapper{
+    width: 80%;
+}
+.top_pic{
+    position: relative;
+    .text{
+        color: white;
+        position: absolute;
+        top:141px;
+        left:45px;
+    }
+    .pic img{
+        width: 100%;
+    }
+}
+.container{
+    height: 725px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 62px;
+    h2{
+        font-size: 33px;
+        color: white;
+        padding-left: 14px;
+        padding-top: 20px;
+    }
+    .c_left{
+        background-image: url(/img/take_out.png);
+        width: 325px;
+        height: 620px;
+        background-size: cover;
+        justify-content: left;
+        margin-left: 57px;
+        position: relative;
+        .c_left_box{
+            width: 304px;
+            height: 90px;
+            border-style: none;
+            border-width: medium;
+            background-color: rgba(247, 245, 245,0.9);
+            position: absolute;
+            top: 519px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            h3{
+                margin-top: 12px;
+                margin-left: 12px;
+                font-size: 77%;
+                font-weight: 100;
+            }
+            p{
+                
+                font-size: 10px;
+                transform: scale(0.9);        
+            }
+        }
+    }
+    .c_right{
+        background-image: url(/img/eat_in.png);
+        width: 325px;
+        height: 621px;
+        background-size: cover;
+        justify-content: right;
+        margin-right: 58px;
+    }
+}
+.map{
+    position: relative;
+    height: 337px;
+    img{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    }
+    .m_container{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5) ;
+        color: white;
+        width: 415px;
+        height: 290px;
+        padding-left: 62px;
+        padding-top: 47px;
+        font-size: large;
+        line-height: 20px;
+        .m_container_text{
+            padding-left: 0;
+            font-size: 10px;
+            transform: scale(0.7);
+            font-weight: lighter;
+        }
+    }
+ 
+}
+.flexbox{
+    display: flex;
+}
