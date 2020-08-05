@@ -99,3 +99,8 @@ body{
 .flexbox{
     display: flex;
 }
+@media screen and (max-width: 768px){ /*タブレット用*/
+    .top_pic{
+        width: 125%;
+    }
+}
