@@ -10,7 +10,7 @@ body{
     .text{
         color: white;
         position: absolute;
-        top:141px;
+        top:124px;
         left:45px;
     }
     .pic img{
@@ -102,18 +102,33 @@ body{
 @media screen and (max-width: 768px){ /*タブレット用*/
     .top_pic{
         width: 125%;
+        .text{
+            font-size: 1.5rem;
+            top:100px;
+            left: 45px;
+        }
     }
 }
 @media screen and (max-width: 768px){ /*タブレット用*/
     .container{
         width: 125%;
+        .c_left{
+            margin-left: 40px;
+            width: 42%;
+        }
+        .c_right{
+            margin-right: 40px;
+            width: 42%;
+        }
     }
 }
 @media screen and (max-width: 768px){ /*タブレット用*/
     .map{
-        width: 125%;
+        img{
+            width: 125%;
+        }
         .m_container{
-            width: 100%;
+            width: 115%;
             font-size: 30px;
             .m_container_text{
             font-size: 14px;

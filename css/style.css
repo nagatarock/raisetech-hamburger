@@ -79,7 +79,7 @@ body {
 .top_pic .text {
   color: white;
   position: absolute;
-  top: 141px;
+  top: 124px;
   left: 45px;
 }
 
@@ -196,6 +196,11 @@ body {
   .top_pic {
     width: 125%;
   }
+  .top_pic .text {
+    font-size: 1.5rem;
+    top: 100px;
+    left: 45px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -203,15 +208,23 @@ body {
   .container {
     width: 125%;
   }
+  .container .c_left {
+    margin-left: 40px;
+    width: 42%;
+  }
+  .container .c_right {
+    margin-right: 40px;
+    width: 42%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   /*タブレット用*/
-  .map {
+  .map img {
     width: 125%;
   }
   .map .m_container {
-    width: 100%;
+    width: 115%;
     font-size: 30px;
   }
   .map .m_container .m_container_text {
