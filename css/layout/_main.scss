@@ -66,7 +66,7 @@ body{
             border-width: medium;
             background-color: rgba(247, 245, 245,0.9);
             position: absolute;
-            top: 420px;
+            top: 520px;
             left: 10px;
             right: 10px;
             bottom: 10px;
@@ -90,6 +90,48 @@ body{
         background-size: cover;
         justify-content: right;
         margin-right: 58px;
+        .c_right_box1{
+            width: 304px;
+            height: 90px;
+            border-style: none;
+            border-width: medium;
+            background-color: rgba(247, 245, 245,0.9);
+            position: absolute;
+            top: 867px;
+            left: 405px;
+            h3{
+                margin-top: 12px;
+                margin-left: 12px;
+                font-size: 77%;
+                font-weight: 100;
+            }
+            p{
+                
+                font-size: 10px;
+                transform: scale(0.9);        
+            }
+        }
+        .c_right_box2{
+            width: 304px;
+            height: 90px;
+            border-style: none;
+            border-width: medium;
+            background-color: rgba(247, 245, 245,0.9);
+            position: absolute;
+            top: 967px;
+            left: 405px;
+            h3{
+                margin-top: 12px;
+                margin-left: 12px;
+                font-size: 77%;
+                font-weight: 100;
+            }
+            p{
+                
+                font-size: 10px;
+                transform: scale(0.9);        
+            }
+        }
     }
 }
 .map{
@@ -119,7 +161,6 @@ body{
             transform-origin: left; /*縮小してずれた分を左に寄せている*/
         }
     }
- 
 }
 .flexbox{
     display: flex;
