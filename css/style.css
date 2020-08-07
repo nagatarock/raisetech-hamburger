@@ -95,14 +95,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 62px;
-}
-
-.container h2 {
-  font-size: 33px;
-  color: white;
-  padding-left: 14px;
-  padding-top: 20px;
+  padding-top: 48px;
 }
 
 .container .c_left {
@@ -115,6 +108,14 @@ body {
           justify-content: left;
   margin-left: 57px;
   position: relative;
+}
+
+.container .c_left h2 {
+  font-size: 33px;
+  color: white;
+  margin-left: 12px;
+  margin-top: 33px;
+  line-height: 1px;
 }
 
 .container .c_left .c_left_box1 {
@@ -180,6 +181,14 @@ body {
   margin-right: 58px;
 }
 
+.container .c_right h2 {
+  font-size: 33px;
+  color: white;
+  margin-left: 12px;
+  margin-top: 33px;
+  line-height: 1px;
+}
+
 .container .c_right .c_right_box1 {
   width: 304px;
   height: 90px;
@@ -187,7 +196,8 @@ body {
   border-width: medium;
   background-color: rgba(247, 245, 245, 0.9);
   position: absolute;
-  top: 867px;
+  top: 851px;
+  /*親要素に対してうまく配置出来ていない*/
   left: 405px;
 }
 
@@ -211,7 +221,8 @@ body {
   border-width: medium;
   background-color: rgba(247, 245, 245, 0.9);
   position: absolute;
-  top: 967px;
+  top: 951px;
+  /*親要素に対してうまく配置出来ていない*/
   left: 405px;
 }
 
