@@ -116,12 +116,14 @@ body{
                 margin-left: 12px;
                 font-size: 77%;
                 font-weight: 100;
-            }
             p{
-                
+                margin-top: 5px;
+                width: 380px;
                 font-size: 10px;
-                transform: scale(0.9);        
+                transform: scale(0.75);
+                transform-origin: left; /*縮小してずれた分を左に寄せている*/     
             }
+        }
         }
         .c_right_box2{
             width: 304px;
@@ -137,12 +139,14 @@ body{
                 margin-left: 12px;
                 font-size: 77%;
                 font-weight: 100;
-            }
             p{
-                
+                margin-top: 5px;
+                width: 380px;
                 font-size: 10px;
-                transform: scale(0.9);        
+                transform: scale(0.75);
+                transform-origin: left; /*縮小してずれた分を左に寄せている*/ 
             }
+        }
         }
     }
 }

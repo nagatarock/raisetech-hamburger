@@ -218,10 +218,15 @@ body {
   font-weight: 100;
 }
 
-.container .c_right .c_right_box1 p {
+.container .c_right .c_right_box1 h3 p {
+  margin-top: 5px;
+  width: 380px;
   font-size: 10px;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  /*縮小してずれた分を左に寄せている*/
 }
 
 .container .c_right .c_right_box2 {
@@ -243,10 +248,15 @@ body {
   font-weight: 100;
 }
 
-.container .c_right .c_right_box2 p {
+.container .c_right .c_right_box2 h3 p {
+  margin-top: 5px;
+  width: 380px;
   font-size: 10px;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  /*縮小してずれた分を左に寄せている*/
 }
 
 .map {
