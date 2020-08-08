@@ -408,16 +408,4 @@ footer {
 footer p {
   font-size: 14px;
 }
-
-@media screen and (min-width: 769px) {
-  /*PC用*/
-}
-
-@media screen and (min-width: 641px) and (max-width: 768px) {
-  /*タブレット用*/
-}
-
-@media screen and (max-width: 640px) {
-  /*スマフォ用*/
-}
 /*# sourceMappingURL=style.css.map */
