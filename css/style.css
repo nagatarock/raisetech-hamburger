@@ -138,10 +138,15 @@ body {
   font-weight: 100;
 }
 
-.container .c_left .c_left_box1 p {
+.container .c_left .c_left_box1 h3 p {
+  margin-top: 5px;
+  width: 380px;
   font-size: 10px;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  /*縮小してずれた分を左に寄せている*/
 }
 
 .container .c_left .c_left_box2 {
@@ -164,10 +169,15 @@ body {
   font-weight: 100;
 }
 
-.container .c_left .c_left_box2 p {
+.container .c_left .c_left_box2 h3 p {
+  margin-top: 5px;
+  width: 380px;
   font-size: 10px;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  /*縮小してずれた分を左に寄せている*/
 }
 
 .container .c_right {
@@ -196,7 +206,7 @@ body {
   border-width: medium;
   background-color: rgba(247, 245, 245, 0.9);
   position: absolute;
-  top: 851px;
+  top: 852px;
   /*親要素に対してうまく配置出来ていない*/
   left: 405px;
 }
@@ -221,7 +231,7 @@ body {
   border-width: medium;
   background-color: rgba(247, 245, 245, 0.9);
   position: absolute;
-  top: 951px;
+  top: 952px;
   /*親要素に対してうまく配置出来ていない*/
   left: 405px;
 }
@@ -269,7 +279,6 @@ body {
   -webkit-transform: scale(0.7);
           transform: scale(0.7);
   /*文字を10px以下に縮小している*/
-  display: block;
   -webkit-transform-origin: left;
           transform-origin: left;
   /*縮小してずれた分を左に寄せている*/
