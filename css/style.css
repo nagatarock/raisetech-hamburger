@@ -687,8 +687,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  /*タブレット用*/
+@media (max-width: 768px) and (min-width: 641px) {
   .container {
     width: 125%;
   }

@@ -190,8 +190,8 @@ body{
         }
     }
 }
-@media (max-width: 768px){ /*タブレット用*/
     .container{
+        @include breakpoint (tablet){
         width: 125%;
         .c_left{
             margin-left: 40px;
