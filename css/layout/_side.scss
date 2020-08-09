@@ -6,6 +6,9 @@
     padding-left: 27px;
     padding-top: 45px;
     color: $font-color;
+    @include breakpoint ( tablet ){
+        display: none;
+    }
     .menu{
         padding-top: 30px;
         font-size: 0.9rem;
@@ -36,9 +39,4 @@
      a{
         text-decoration: none;
      }
-    }
-    @media screen and (max-width: 768px){ /*タブレット用*/
-        .sidebar{
-            display: none;
-        }
     }

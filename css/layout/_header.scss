@@ -34,7 +34,7 @@ header{
     color:$font-color;
 }
 }
-@media screen and (max-width: 768px){ /*タブレット用*/
+@media(max-width: 768px){ /*タブレット用*/
     header{
         width: 125%;
         height: auto;
