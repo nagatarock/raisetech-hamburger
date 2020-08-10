@@ -481,6 +481,14 @@ body {
   padding-top: 48px;
 }
 
+.container h2 {
+  font-size: 33px;
+  color: white;
+  margin-left: 12px;
+  margin-top: 33px;
+  line-height: 25px;
+}
+
 .container .c_left {
   background-image: url(/img/take_out.png);
   width: 325px;
@@ -491,14 +499,6 @@ body {
           justify-content: left;
   margin-left: 57px;
   position: relative;
-}
-
-.container .c_left h2 {
-  font-size: 33px;
-  color: white;
-  margin-left: 12px;
-  margin-top: 33px;
-  line-height: 1px;
 }
 
 .container .c_left .c_left_box1 {
@@ -574,14 +574,6 @@ body {
   margin-right: 58px;
 }
 
-.container .c_right h2 {
-  font-size: 33px;
-  color: white;
-  margin-left: 12px;
-  margin-top: 33px;
-  line-height: 1px;
-}
-
 .container .c_right .c_right_box1 {
   width: 304px;
   height: 90px;
@@ -589,9 +581,10 @@ body {
   border-width: medium;
   background-color: rgba(247, 245, 245, 0.9);
   position: absolute;
-  top: 852px;
+  top: 420px;
   /*親要素に対してうまく配置出来ていない*/
-  left: 405px;
+  left: 10px;
+  right: 10px;
 }
 
 .container .c_right .c_right_box1 h3 {
@@ -619,9 +612,10 @@ body {
   border-width: medium;
   background-color: rgba(247, 245, 245, 0.9);
   position: absolute;
-  top: 952px;
+  top: 520px;
   /*親要素に対してうまく配置出来ていない*/
-  left: 405px;
+  left: 10px;
+  right: 10px;
 }
 
 .container .c_right .c_right_box2 h3 {

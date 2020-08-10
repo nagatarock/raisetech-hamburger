@@ -22,14 +22,14 @@ body{
     display: flex;
     justify-content: space-between;
     padding-top: 48px;
+    h2{
+        font-size: 33px;
+        color: white;
+        margin-left: 12px;
+        margin-top: 33px;
+        line-height: 25px;
+    }
     .c_left{
-        h2{
-            font-size: 33px;
-            color: white;
-            margin-left: 12px;
-            margin-top: 33px;
-            line-height: 1px;
-        }
         background-image: url(/img/take_out.png);
         width: 325px;
         height: 620px;
@@ -95,13 +95,6 @@ body{
         background-size: cover;
         justify-content: right;
         margin-right: 58px;
-        h2{
-            font-size: 33px;
-            color: white;
-            margin-left: 12px;
-            margin-top: 33px;
-            line-height: 1px;
-        }
         .c_right_box1{
             width: 304px;
             height: 90px;
@@ -109,8 +102,9 @@ body{
             border-width: medium;
             background-color: rgba(247, 245, 245,0.9);
             position: absolute;
-            top: 852px; /*親要素に対してうまく配置出来ていない*/
-            left: 405px;
+            top: 420px; /*親要素に対してうまく配置出来ていない*/
+            left: 10px;
+            right: 10px;
             h3{
                 margin-top: 12px;
                 margin-left: 12px;
@@ -132,8 +126,9 @@ body{
             border-width: medium;
             background-color: rgba(247, 245, 245,0.9);
             position: absolute;
-            top: 952px;/*親要素に対してうまく配置出来ていない*/
-            left: 405px;
+            top: 520px;/*親要素に対してうまく配置出来ていない*/
+            left: 10px;
+            right: 10px;
             h3{
                 margin-top: 12px;
                 margin-left: 12px;
