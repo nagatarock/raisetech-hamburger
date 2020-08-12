@@ -572,6 +572,7 @@ body {
       -ms-flex-pack: right;
           justify-content: right;
   margin-right: 58px;
+  position: relative;
 }
 
 .container .c_right .c_right_box1 {
