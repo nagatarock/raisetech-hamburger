@@ -2,10 +2,10 @@
     width: 20%;
     height: auto;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 1.8rem;
     background-color: #F2EDE9;
-    padding-left: 27px;
-    padding-top: 45px;
+    padding-left: 2.7%;
+    padding-top: 4.5%;
     color: $font-color;
     @include breakpoint ( tablet ){
         display: none;
