@@ -375,7 +375,8 @@ video {
 }
 
 header {
-  height: 112px;
+  width: 100%;
+  height: 8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,15 +387,17 @@ header {
 }
 
 header h1 {
-  padding-top: 35px;
-  padding-left: 34px;
+  font-size: 3rem;
+  margin-top: 4.3%;
+  /*marginは親のwidthの%で指定*/
+  margin-left: 4.2%;
   font-family: 'Roboto', sans-serif;
   color: #707070;
 }
 
 header #form1 {
-  margin-top: 45px;
-  margin-right: 20px;
+  margin-top: 5.5%;
+  margin-right: 1.9%;
 }
 
 header #form1 .search {
@@ -407,7 +410,7 @@ header #form1 .search {
   border-width: thin;
   background-color: #ffffff;
   border-color: #707070;
-  width: 205px;
+  width: 206px;
   height: 25px;
   margin-right: 4px;
   vertical-align: middle;
@@ -415,13 +418,13 @@ header #form1 .search {
 }
 
 header #form1 .button {
-  font-size: 10px;
+  font-size: 1rem;
   border: solid;
   border-radius: 6px;
   border-width: thin;
   border-color: #707070;
   background-color: #F2EDE9;
-  width: 70px;
+  width: 71px;
   height: 25px;
   color: #707070;
   vertical-align: middle;
@@ -430,7 +433,7 @@ header #form1 .button {
 
 @media (max-width: 768px) and (min-width: 641px) {
   header {
-    width: 125%;
+    width: 100%;
     height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -441,29 +444,47 @@ header #form1 .button {
             align-items: center;
   }
   header #form1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
   }
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  max-width: 1000px;
+  max-width: 998px;
+  max-height: 1556px;
+  height: 1556px;
   margin: 0;
+}
+
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 95%;
 }
 
 .wrapper {
   width: 80%;
+  height: 100%;
 }
 
 .top_pic {
   position: relative;
+  width: 100%;
+  height: 19%;
 }
 
 .top_pic .text {
+  font-size: 2.1rem;
   color: white;
   position: absolute;
-  top: 124px;
-  left: 45px;
+  top: 45%;
+  left: 5.5%;
 }
 
 .top_pic .pic img {
@@ -471,52 +492,51 @@ body {
 }
 
 .container {
-  height: 725px;
+  height: 50%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 48px;
+  padding-top: 6%;
 }
 
 .container h2 {
-  font-size: 33px;
+  font-size: 3.3rem;
   color: white;
-  margin-left: 12px;
-  margin-top: 33px;
-  line-height: 25px;
+  margin-left: 3.7%;
+  margin-top: 10%;
+  line-height: 2.5rem;
 }
 
 .container .c_left {
   background-image: url(/img/take_out.png);
-  width: 325px;
-  height: 620px;
+  width: 40.5%;
+  height: 90%;
   background-size: cover;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  margin-left: 57px;
+  margin-left: 7%;
   position: relative;
 }
 
 .container .c_left .c_left_box1 {
-  width: 304px;
-  height: 90px;
+  width: 94%;
+  height: 15%;
   border-style: none;
   border-width: medium;
   background-color: rgba(247, 245, 245, 0.9);
   position: absolute;
-  top: 420px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
+  top: 67.5%;
+  left: 3%;
 }
 
 .container .c_left .c_left_box1 h3 {
-  margin-top: 12px;
-  margin-left: 12px;
+  margin-top: 4%;
+  margin-left: 4%;
   font-size: 77%;
   font-weight: 100;
 }
@@ -639,7 +659,8 @@ body {
 
 .map {
   position: relative;
-  height: 337px;
+  width: 100%;
+  height: 23%;
 }
 
 .map img {
@@ -652,8 +673,8 @@ body {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  width: 415px;
-  height: 290px;
+  width: 61%;
+  height: 100%;
   padding-left: 62px;
   padding-top: 47px;
   font-size: 20px;
@@ -672,14 +693,7 @@ body {
   /*縮小してずれた分を左に寄せている*/
 }
 
-.flexbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (max-width: 768px) {
-  /*タブレット用*/
+@media (max-width: 768px) and (min-width: 641px) {
   .top_pic {
     width: 125%;
   }
@@ -704,8 +718,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  /*タブレット用*/
+@media (max-width: 768px) and (min-width: 641px) {
   .map img {
     width: 125%;
   }
@@ -720,6 +733,7 @@ body {
 
 .sidebar {
   width: 20%;
+  height: auto;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   background-color: #F2EDE9;
@@ -770,18 +784,18 @@ body {
 }
 
 footer {
-  margin: 0;
-  padding: 2rem 0;
+  font-size: 1rem;
   width: 100%;
-  height: 78px;
-  line-height: 2;
+  height: 5%;
+  padding-top: 2%;
+  line-height: 2.2;
   background-image: url(/img/footer_background.png);
-  color: white;
-  font-size: 20px;
+  color: #FFFFFF;
   text-align: center;
 }
 
 footer p {
-  font-size: 14px;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
 }
 /*# sourceMappingURL=style.css.map */
