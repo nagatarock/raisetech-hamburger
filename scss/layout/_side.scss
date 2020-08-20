@@ -1,4 +1,4 @@
-.sidebar{
+.l-sidebar{
     width: 20%;
     height: auto;
     font-family: 'Roboto', sans-serif;
@@ -10,26 +10,26 @@
     @include breakpoint ( tablet ){
         display: none;
     }
-    .menu{
+    .l-sidebar_menu{
         padding-top: 30px;
         font-size: 0.9rem;
         list-style-type: none;
         padding-left: 0;
-                    .burger{
+                    .l-sidebar_menu_burger{
                     padding-top:     23px;
                     padding-left:    10px;
                     font-size:       0.7rem;
                     list-style-type: none;
                     line-height:     22px;
                     }
-                    .side{
+                    .l-sidebar_menu_side{
                         padding-top:     23px;
                         padding-left:    10px;
                     font-size:       0.7rem;
                     list-style-type: none;
                     line-height:     22px;
                     }
-                    .drink{
+                    .l-sidebar_menu_drink{
                         padding-top:     23px;
                         padding-left:    10px;
                     font-size:       0.7rem;

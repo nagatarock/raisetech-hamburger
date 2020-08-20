@@ -7,31 +7,41 @@ body{
     height: 1556px;
     margin: 0;
 }
-.flexbox{
+.l-main_flexbox{
     display: flex;
     width: 100%;
     height: 95%;
 }
-.wrapper{
+.l-main_wrapper{
     width: 80%;
     height: 100%;
 }
-.top_pic{
+.l-main_top_pic{
     position: relative;
     width: 100%;
     height: 19%;
-    .text{
+    .l-main_text{
         font-size: 2.1rem;
         color: white;
         position: absolute;
         top:45%;
         left:5.5%;
     }
-    .pic img{
+    .l-main_pic img{
         width: 100%;
     }
+    @include breakpoint (tablet){
+        .l-main_top_pic{
+            width: 100%;
+            .l-main_text{
+                font-size: 1.5rem;
+                top:100px;
+                left: 45px;
+            }
+        }
+    }
 }
-.container{
+.l-main_container{
     height: 50%;
     width: 100%;
     display: flex;
@@ -44,7 +54,7 @@ body{
         margin-top: 10%;
         line-height: 2.5rem;
     }
-    .c_left{
+    .l-main_container_left{
         background-image: url(/img/take_out.png);
         width: 40.5%;
         height: 90%;
@@ -52,7 +62,7 @@ body{
         justify-content: left;
         margin-left: 7%;
         position: relative;
-        .c_left_box1{
+        .l-main_container_left_box1{
             width: 94%;
             height: 15%;
             border-style: none;
@@ -75,7 +85,7 @@ body{
             }
         }
         }
-        .c_left_box2{
+        .l-main_container_left_box2{
             width: 94%;
             height: 15%;
             border-style: none;
@@ -99,7 +109,7 @@ body{
         }
         }
     }
-    .c_right{
+    .l-main_container_right{
         background-image: url(/img/eat_in.png);
         width: 40.5%;
         height: 90%;
@@ -107,7 +117,7 @@ body{
         justify-content: right;
         margin-right: 7%;
         position: relative;
-        .c_right_box1{
+        .l-main_container_right_box1{
             width: 94%;
             height: 15%;
             border-style: none;
@@ -130,7 +140,7 @@ body{
             }
         }
         }
-        .c_right_box2{
+        .l-main_container_right_box2{
             width: 94%;
             height: 15%;
             border-style: none;
@@ -154,8 +164,22 @@ body{
         }
         }
     }
+
+@include breakpoint (tablet){
+    .l-main_container{
+    width: 100%;
+    .l-main_container_left{
+        margin-left: 40px;
+        width: 42%;
+    }
+    .l-main_container_right{
+        margin-right: 40px;
+        width: 42%;
+    }
 }
-.map{
+}
+}
+.l-main_map{
     position: relative;
     width: 100%;
     height: 23%;
@@ -164,7 +188,7 @@ body{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     }
-    .m_container{
+    .l-main_map_container{
         position: absolute;
         background-color: rgba(0, 0, 0, 0.5) ;
         color: white;
@@ -174,7 +198,7 @@ body{
         padding-top: 47px;
         font-size: 20px;
         line-height: 15px;
-        .m_container_text{
+        .l-main_map_container_text{
             width: 500px;
             font-size: 10px;
             line-height: 20px;
@@ -182,40 +206,17 @@ body{
             transform-origin: left; /*縮小してずれた分を左に寄せている*/
         }
     }
-}
- @include breakpoint (tablet){
-    .top_pic{
-        width: 125%;
-        .text{
-            font-size: 1.5rem;
-            top:100px;
-            left: 45px;
-        }
-    }
-}
-@include breakpoint (tablet){
-        .container{
-        width: 100%;
-        .c_left{
-            margin-left: 40px;
-            width: 42%;
-        }
-        .c_right{
-            margin-right: 40px;
-            width: 42%;
-        }
-    }
-}
     @include breakpoint (tablet){
-    .map{
-        img{
-            width: 100%;
-        }
-        .m_container{
-            width: 100%;
-            font-size: 30px;
-            .m_container_text{
-            font-size: 14px;
+        .l-main_map{
+            img{
+                width: 100%;
+            }
+            .l-main_map_container{
+                width: 100%;
+                font-size: 30px;
+                .l-main_map_container_text{
+                font-size: 14px;
+                }
             }
         }
     }

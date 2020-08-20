@@ -395,12 +395,12 @@ header h1 {
   color: #707070;
 }
 
-header #form1 {
+header #l-header_form1 {
   margin-top: 5.5%;
   margin-right: 1.9%;
 }
 
-header #form1 .search {
+header #l-header_form1 .l-header_search {
   background-image: url(/img/index_search_01.png);
   background-repeat: no-repeat;
   background-position: 4px center;
@@ -417,7 +417,7 @@ header #form1 .search {
   /*検索ボタンと高さを揃える*/
 }
 
-header #form1 .button {
+header #l-header_form1 .l-header_button {
   font-size: 1rem;
   border: solid;
   border-radius: 6px;
@@ -443,7 +443,7 @@ header #form1 .button {
         -ms-flex-align: center;
             align-items: center;
   }
-  header #form1 {
+  header #l-header_form1 {
     margin-top: 2.5%;
     margin-bottom: 2.5%;
   }
@@ -460,7 +460,7 @@ body {
   margin: 0;
 }
 
-.flexbox {
+.l-main_flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -468,18 +468,18 @@ body {
   height: 95%;
 }
 
-.wrapper {
+.l-main_wrapper {
   width: 80%;
   height: 100%;
 }
 
-.top_pic {
+.l-main_top_pic {
   position: relative;
   width: 100%;
   height: 19%;
 }
 
-.top_pic .text {
+.l-main_top_pic .l-main_text {
   font-size: 2.1rem;
   color: white;
   position: absolute;
@@ -487,11 +487,22 @@ body {
   left: 5.5%;
 }
 
-.top_pic .pic img {
+.l-main_top_pic .l-main_pic img {
   width: 100%;
 }
 
-.container {
+@media (max-width: 768px) and (min-width: 641px) {
+  .l-main_top_pic .l-main_top_pic {
+    width: 100%;
+  }
+  .l-main_top_pic .l-main_top_pic .l-main_text {
+    font-size: 1.5rem;
+    top: 100px;
+    left: 45px;
+  }
+}
+
+.l-main_container {
   height: 50%;
   width: 100%;
   display: -webkit-box;
@@ -503,7 +514,7 @@ body {
   padding-top: 6%;
 }
 
-.container h2 {
+.l-main_container h2 {
   font-size: 3.3rem;
   color: white;
   margin-left: 3.7%;
@@ -511,7 +522,7 @@ body {
   line-height: 2.5rem;
 }
 
-.container .c_left {
+.l-main_container .l-main_container_left {
   background-image: url(/img/take_out.png);
   width: 40.5%;
   height: 90%;
@@ -523,7 +534,7 @@ body {
   position: relative;
 }
 
-.container .c_left .c_left_box1 {
+.l-main_container .l-main_container_left .l-main_container_left_box1 {
   width: 94%;
   height: 15%;
   border-style: none;
@@ -534,14 +545,14 @@ body {
   left: 3%;
 }
 
-.container .c_left .c_left_box1 h3 {
+.l-main_container .l-main_container_left .l-main_container_left_box1 h3 {
   margin-top: 4%;
   margin-left: 4%;
   font-size: 1.2rem;
   font-weight: 100;
 }
 
-.container .c_left .c_left_box1 h3 p {
+.l-main_container .l-main_container_left .l-main_container_left_box1 h3 p {
   margin-top: 5px;
   width: 380px;
   font-size: 1rem;
@@ -552,7 +563,7 @@ body {
   /*縮小してずれた分を左に寄せている*/
 }
 
-.container .c_left .c_left_box2 {
+.l-main_container .l-main_container_left .l-main_container_left_box2 {
   width: 94%;
   height: 15%;
   border-style: none;
@@ -563,14 +574,14 @@ body {
   left: 3%;
 }
 
-.container .c_left .c_left_box2 h3 {
+.l-main_container .l-main_container_left .l-main_container_left_box2 h3 {
   margin-top: 4%;
   margin-left: 4%;
   font-size: 1.2rem;
   font-weight: 100;
 }
 
-.container .c_left .c_left_box2 h3 p {
+.l-main_container .l-main_container_left .l-main_container_left_box2 h3 p {
   margin-top: 5px;
   width: 380px;
   font-size: 10px;
@@ -581,7 +592,7 @@ body {
   /*縮小してずれた分を左に寄せている*/
 }
 
-.container .c_right {
+.l-main_container .l-main_container_right {
   background-image: url(/img/eat_in.png);
   width: 40.5%;
   height: 90%;
@@ -593,7 +604,7 @@ body {
   position: relative;
 }
 
-.container .c_right .c_right_box1 {
+.l-main_container .l-main_container_right .l-main_container_right_box1 {
   width: 94%;
   height: 15%;
   border-style: none;
@@ -604,14 +615,14 @@ body {
   right: 3%;
 }
 
-.container .c_right .c_right_box1 h3 {
+.l-main_container .l-main_container_right .l-main_container_right_box1 h3 {
   margin-top: 4%;
   margin-left: 4%;
   font-size: 1.2rem;
   font-weight: 100;
 }
 
-.container .c_right .c_right_box1 h3 p {
+.l-main_container .l-main_container_right .l-main_container_right_box1 h3 p {
   margin-top: 5px;
   width: 380px;
   font-size: 1rem;
@@ -622,7 +633,7 @@ body {
   /*縮小してずれた分を左に寄せている*/
 }
 
-.container .c_right .c_right_box2 {
+.l-main_container .l-main_container_right .l-main_container_right_box2 {
   width: 94%;
   height: 15%;
   border-style: none;
@@ -633,14 +644,14 @@ body {
   right: 3%;
 }
 
-.container .c_right .c_right_box2 h3 {
+.l-main_container .l-main_container_right .l-main_container_right_box2 h3 {
   margin-top: 4%;
   margin-left: 4%;
   font-size: 1.2rem;
   font-weight: 100;
 }
 
-.container .c_right .c_right_box2 h3 p {
+.l-main_container .l-main_container_right .l-main_container_right_box2 h3 p {
   margin-top: 5px;
   width: 380px;
   font-size: 1rem;
@@ -651,19 +662,33 @@ body {
   /*縮小してずれた分を左に寄せている*/
 }
 
-.map {
+@media (max-width: 768px) and (min-width: 641px) {
+  .l-main_container .l-main_container {
+    width: 100%;
+  }
+  .l-main_container .l-main_container .l-main_container_left {
+    margin-left: 40px;
+    width: 42%;
+  }
+  .l-main_container .l-main_container .l-main_container_right {
+    margin-right: 40px;
+    width: 42%;
+  }
+}
+
+.l-main_map {
   position: relative;
   width: 100%;
   height: 23%;
 }
 
-.map img {
+.l-main_map img {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.map .m_container {
+.l-main_map .l-main_map_container {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -675,7 +700,7 @@ body {
   line-height: 15px;
 }
 
-.map .m_container .m_container_text {
+.l-main_map .l-main_map_container .l-main_map_container_text {
   width: 500px;
   font-size: 10px;
   line-height: 20px;
@@ -688,44 +713,19 @@ body {
 }
 
 @media (max-width: 768px) and (min-width: 641px) {
-  .top_pic {
-    width: 125%;
-  }
-  .top_pic .text {
-    font-size: 1.5rem;
-    top: 100px;
-    left: 45px;
-  }
-}
-
-@media (max-width: 768px) and (min-width: 641px) {
-  .container {
+  .l-main_map .l-main_map img {
     width: 100%;
   }
-  .container .c_left {
-    margin-left: 40px;
-    width: 42%;
-  }
-  .container .c_right {
-    margin-right: 40px;
-    width: 42%;
-  }
-}
-
-@media (max-width: 768px) and (min-width: 641px) {
-  .map img {
-    width: 100%;
-  }
-  .map .m_container {
+  .l-main_map .l-main_map .l-main_map_container {
     width: 100%;
     font-size: 30px;
   }
-  .map .m_container .m_container_text {
+  .l-main_map .l-main_map .l-main_map_container .l-main_map_container_text {
     font-size: 14px;
   }
 }
 
-.sidebar {
+.l-sidebar {
   width: 20%;
   height: auto;
   font-family: 'Roboto', sans-serif;
@@ -737,19 +737,19 @@ body {
 }
 
 @media (max-width: 768px) and (min-width: 641px) {
-  .sidebar {
+  .l-sidebar {
     display: none;
   }
 }
 
-.sidebar .menu {
+.l-sidebar .l-sidebar_menu {
   padding-top: 30px;
   font-size: 0.9rem;
   list-style-type: none;
   padding-left: 0;
 }
 
-.sidebar .menu .burger {
+.l-sidebar .l-sidebar_menu .l-sidebar_menu_burger {
   padding-top: 23px;
   padding-left: 10px;
   font-size: 0.7rem;
@@ -757,7 +757,7 @@ body {
   line-height: 22px;
 }
 
-.sidebar .menu .side {
+.l-sidebar .l-sidebar_menu .l-sidebar_menu_side {
   padding-top: 23px;
   padding-left: 10px;
   font-size: 0.7rem;
@@ -765,7 +765,7 @@ body {
   line-height: 22px;
 }
 
-.sidebar .menu .drink {
+.l-sidebar .l-sidebar_menu .l-sidebar_menu_drink {
   padding-top: 23px;
   padding-left: 10px;
   font-size: 0.7rem;
@@ -773,7 +773,7 @@ body {
   line-height: 22px;
 }
 
-.sidebar a {
+.l-sidebar a {
   text-decoration: none;
 }
 
