@@ -15,24 +15,25 @@ body{
     width: 80%;
     height: 100%;
 }
-.l-main_top_pic{
+.p-main_top_pic{
     position: relative;
     width: 100%;
     height: 19%;
-    .l-main_text{
+    background-color: #000000;
+    .c-main_text{
         font-size: 2.1rem;
         color: white;
         position: absolute;
         top:45%;
         left:5.5%;
     }
-    .l-main_pic img{
+    .p-main_pic img{
         width: 100%;
         height: 100%;
     }
 }
 
-.l-main_container{
+.p-main_container{
     width: 100%;
     height: 752px;
     display: flex;
@@ -45,7 +46,7 @@ body{
         margin-top: 10%;
         line-height: 2.5rem;
     }
-    &_left{
+    .p-main_container_left{
         background-image: url(/img/take_out.png);
         width: 40.5%;
         height: 90%;
@@ -53,7 +54,7 @@ body{
         justify-content: left;
         margin-left: 7%;
         position: relative;
-        &_box1{
+        .c-main_container_left_box1{
             width: 94%;
             height: 15%;
             border-style: none;
@@ -67,16 +68,16 @@ body{
                 margin-left: 4%;
                 font-size: 1.2rem;
                 font-weight: 100;
+                width: 123%;
             p{
                 margin-top: 5px;
-                width: 380px;
                 font-size: 1rem;
                 transform: scale(0.75);
                 transform-origin: left; /*縮小してずれた分を左に寄せている*/
             }
         }
         }
-        &_box2{
+        .c-main_container_left_box2{
             width: 94%;
             height: 15%;
             border-style: none;
@@ -90,9 +91,10 @@ body{
                 margin-left: 4%;
                 font-size: 1.2rem;
                 font-weight: 100;
+                width: 123%;
+
             p{
                 margin-top: 5px;
-                width: 380px;
                 font-size: 10px;
                 transform: scale(0.75);
                 transform-origin: left; /*縮小してずれた分を左に寄せている*/  
@@ -100,7 +102,7 @@ body{
         }
         }
     }
-    &_right{
+    .p-main_container_right{
         background-image: url(/img/eat_in.png);
         width: 40.5%;
         height: 90%;
@@ -108,7 +110,7 @@ body{
         justify-content: right;
         margin-right: 7%;
         position: relative;
-        &_box1{
+        .c-main_container_right_box1{
             width: 94%;
             height: 15%;
             border-style: none;
@@ -122,16 +124,16 @@ body{
                 margin-left: 4%;
                 font-size: 1.2rem;
                 font-weight: 100;
+                width: 123%;
             p{
                 margin-top: 5px;
-                width: 380px;
                 font-size: 1rem;
                 transform: scale(0.75);
                 transform-origin: left; /*縮小してずれた分を左に寄せている*/
             }
         }
         }
-        &_box2{
+        .c-main_container_right_box2{
             width: 94%;
             height: 15%;
             border-style: none;
@@ -145,9 +147,9 @@ body{
                 margin-left: 4%;
                 font-size: 1.2rem;
                 font-weight: 100;
+                width: 123%;
             p{
                 margin-top: 5px;
-                width: 380px;
                 font-size: 1rem;
                 transform: scale(0.75);
                 transform-origin: left; /*縮小してずれた分を左に寄せている*/
@@ -157,7 +159,7 @@ body{
     }
 }
 
-.l-main_map{
+.p-main_map{
     position: relative;
     width: 100%;
     height: 23%;
@@ -166,30 +168,30 @@ body{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     }
-    .l-main_map_container{
+    .p-main_map_container{
         position: absolute;
         background-color: rgba(0, 0, 0, 0.5) ;
         color: white;
         width: 61%;
-        height: 100%;
+        height: 98.5%;
         padding-left: 62px;
-        padding-top: 47px;
-        font-size: 20px;
-        line-height: 15px;
-        .l-main_map_container_text{
-            width: 500px;
-            font-size: 10px;
-            line-height: 20px;
+        padding-top: 43px;
+        font-size: 2rem;
+        line-height: 2rem;
+        .c-main_map_container_text{
+            width: 120%;
+            font-size: 1.18rem;
+            line-height: 2rem;
             transform: scale(0.7); /*文字を10px以下に縮小している*/
             transform-origin: left; /*縮小してずれた分を左に寄せている*/
         }
     }
 }
 @include breakpoint (tablet){
-    .l-main_top_pic{
+    .p-main_top_pic{
         width: 125%;
         height: 15%;
-        .l-main_text{
+        .c-main_text{
             font-size: 1.5rem;
             top:100px;
             left: 45px;
@@ -197,9 +199,9 @@ body{
     }
 }
 @include breakpoint (tablet){
-    .l-main_container{
+    .p-main_container{
     width: 125%;
-    &_left{
+    .c-main_container_left{
         margin-left: 40px;
         width: 42%;
         &_box1{
@@ -210,7 +212,6 @@ body{
                 font-size: 2rem;
             p{
                 font-size: 1.6rem;
-                word-wrap: break-word;
             }
         }
     }
@@ -226,7 +227,7 @@ body{
         }
         }
     }
-    &_right{
+    .c-main_container_right{
         margin-right: 40px;
         width: 42%;
         &_box1{
@@ -237,7 +238,7 @@ body{
                 font-size: 2rem;
             p{
                 font-size: 1.6rem;
-                word-wrap: break-word;
+                overflow-wrap : break-word;
             }
         }
         }
@@ -249,25 +250,97 @@ body{
                 font-size: 2rem;
             p{
                 font-size: 1.6rem;
-                word-wrap: break-word;
             }
         }
         }
-    }
+    } 
 }
 }
     @include breakpoint (tablet){
-        .l-main_map{
+        .p-main_map{
             height: 22%;
             img{
                 width: 125%;
             }
-            .l-main_map_container{
+            .p-main_map_container{
                 width: 125%;
-                font-size: 30px;
-                .l-main_map_container_text{
-                font-size: 14px;
+                font-size: 2rem;
+                line-height: 2rem;
+                .c-main_map_container_text{
+                font-size: 1.5rem;
+                line-height: 3rem;
                 }
             }
         }
     }
+    /*アーカイブページ*/
+
+    /*トップ画像*/
+    .l-archive_flexbox{
+        display: flex;
+        width: 100%;
+        height: 95%;
+    }
+    .l-archive_wrapper{
+        width: 80%;
+        height: 100%;
+    }
+    .p-archive_top_pic{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 19%;
+        background-color: #000000;
+        .p-archive_text{
+            display: flex;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.1rem;
+            color: white;
+            position: absolute;
+            top:45%;
+            left:5.5%;
+            &_sub{
+                font-size: 1rem;
+                transform: scale(0.5);
+                margin-left: -15px;
+                margin-top: 6px;
+            }
+        }
+        .p-archive_pic img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    /*メインコンテンツ*/
+    .p-archive_container{
+        width: 100%;
+        height: 1039px;
+        margin-left: 5%;
+        margin-top: 3%;
+        &_text{
+            width: 703px;
+            height: 73px;
+            background-color:gray;
+        }
+        p{
+        font-size: 1rem;
+        transform: scale(0.6);
+        width: 150%;
+        margin-top: -5px;
+        margin-left: -200px;
+
+        }
+    }
+    .p-archive_container_card1{
+        display: flex;
+        width: 704px;
+        height: 245px;
+        &_pic{
+            img{
+                width: 50%;
+                height: 100%;
+            }
+        }
+    }
+
