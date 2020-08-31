@@ -1,0 +1,17 @@
+.p-main_top_pic{
+    position: relative;
+    width: 100%;
+    height: 19%;
+    background-color: #000000;
+    .c-main_text{
+        font-size: 2.1rem;
+        color: white;
+        position: absolute;
+        top:45%;
+        left:5.5%;
+    }
+    .p-main_pic img{
+        width: 100%;
+        height: 100%;
+    }
+}

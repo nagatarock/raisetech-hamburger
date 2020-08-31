@@ -1,0 +1,43 @@
+.p-archive_search_container{
+    width: 100%;
+    height: 1560px;
+    &_text{
+        margin: 35px auto;
+        width: 87%;
+        height: 4.6%;
+    }
+    p{
+    font-size: 1rem;
+    }
+    &_card{
+    display: flex;
+    width: 87%;
+    height: 245px;
+    background-color:#3C2B1C;
+    margin: 0 auto 15px auto;
+    &_pic{
+        img{
+            width: 352px;
+            height: 100%;
+        }
+    }
+    &_textbox{
+        color: white;
+        width: 50%;
+        height: 100%;
+        h2{
+            font-size: 1.8rem;
+            margin-left: 32px;
+            margin-top: 31px;
+        }
+        h3{
+            font-size: 1.2rem;
+            margin: 31px 0 11px 32px;
+        }
+        h4{
+            margin-left: 32px;
+            font-size: 0.5rem;
+        }
+            }
+}
+}

@@ -11,9 +11,15 @@
 @import "layout/footer";
 
 // Object //
-@import "object/Component/button";
+
 // Component //
-
+@import "object/Component/button";
+@import "object/Component/pagination";
 // Project //
-
+@import "object/Project/main_pic";
+@import "object/Project/main_container";
+@import "object/Project/main_map";
+@import "object/Project/archive_container";
+@import "object/Project/archive_top_pic";
+@import "object/Project/archive_search_container";
 // Utility //

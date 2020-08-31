@@ -1,0 +1,26 @@
+.p-archive_top_pic{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 19%;
+    background-color: #000000;
+    .p-archive_text{
+        display: flex;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.1rem;
+        color: white;
+        position: absolute;
+        top:45%;
+        left:5.5%;
+        &_sub{
+            font-size: 1rem;
+            transform: scale(0.5);
+            margin-left: -15px;
+            margin-top: 6px;
+        }
+    }
+    .p-archive_pic img{
+        width: 100%;
+        height: 100%;
+    }
+}
