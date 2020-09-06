@@ -101,16 +101,25 @@ body{
             }
         }
     }
-    .l-archive_flexbox{
-        display: flex;
-        width: 100%;
-        height: 95%;
-    }
-    .l-archive_wrapper{
-        width: 80%;
-        height: 100%;
-    }
 
+.l-archive_flexbox{
+        display: flex;
+        width:   100%;
+        height:  95%;
+        }
+        .l-archive_wrapper{
+        width:   80%;
+        height:  100%;
+        }
+.l-single_flexbox{
+            display: flex;
+            width:   100%;
+            height:  98%;
+            }
+            .l-single_wrapper{
+            width:   80%;
+            height:  100%;
+            }
 
    
 
