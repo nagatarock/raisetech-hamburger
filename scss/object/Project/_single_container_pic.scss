@@ -1,0 +1,55 @@
+.p-single_container_pic{
+    margin-top: 31px;
+    width: 100%;
+    &_top{
+    text-align: center;
+    img{
+    width: 87%;
+    height: auto;
+}
+}
+&_menu1{
+    width: 87%;
+    height: auto;
+    display: flex;
+    margin: 31px auto;
+    justify-content: space-between;
+    img{
+        width: 302px;
+        height: 186px;
+    }
+    &_text{
+        width: 381px;
+        height: 99px;
+    }
+}
+&_menu2{
+    width: 87%;
+    height: auto;
+    display: flex;
+    margin: 31px auto;
+
+    img{
+        width: 302px;
+        height: 186px;
+    }
+    &_text{
+        width: 381px;
+        height: 99px;
+    }
+
+}
+&_menu3{
+    width: 87%;
+    height: auto;
+    &_pic{
+    width: 302px;
+    height: 186px;
+    margin: 31px auto;
+    img{
+    width: 100%;
+    height: 100%;
+    }
+}
+}
+}

@@ -1,24 +1,5 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>front-page</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-</head>
-<!-- body -->
-<body>
-    <div class="l-main_flexbox">
-     <div class="l-main_wrapper">
-    <!-- header -->
-    <header>
-        <h1>Hamburger</h1>
-        <form id="l-header_form1" action="#" method="post">
-            <input type="text" name="text" class="l-header_search">
-            <input type="submit" name="submit" value="検索" class="l-header_button">
-        </form>
-    </header>
+<?php get_header(); ?> 
+
             <article class="p-main_top_pic">
                 <div class="p-main_pic">
                 <img src="img/top.png" alt="TOP画像">
@@ -75,48 +56,6 @@
             <img src="/img/map.png" alt="店舗地図">
             </section>
         </div>
-    <!-- サイドバー -->
-    <section class="l-sidebar">
-        Menu
-    <ul class="l-sidebar_menu">
-            <li>バーガー
-        <ul class="l-sidebar_menu_burger">
-            <li><a href="#">ハンバーガー</a></li>
-            <li><a href="#">チーズバーガー</a></li>
-            <li><a href="#">テリヤキバーガー</a></li>
-            <li><a href="#">アボカドバーガー</a></li>
-            <li><a href="#">フィッシュバーガー</a></li>
-            <li><a href="#">ベーコンバーガー</a></li>
-            <li><a href="#">チキンバーガー</a></li>
-            <br>
-        </ul>
-    </li>
-    <li>サイド
-        <ul class="l-sidebar_menu_side">
-            <li><a href="#">ポテト</a></li>
-            <li><a href="#">サラダ</a></li>
-            <li><a href="#">ナゲット</a></li>
-            <li><a href="#">コーン</a></li>
-            <br>
-        </ul>
-    </li>
-    <li>ドリンク
-        <ul class="l-sidebar_menu_drink">
-            <li><a href="#">コーラ</a></li>
-            <li><a href="#">ファンタ</a></li>
-            <li><a href="#">オレンジ</a></li>
-            <li><a href="#">アップル</a></li>
-            <li><a href="#">紅茶(Ice/Hot)</a></li>
-            <li><a href="#">コーヒー(Ice/Hot)</a></li>
-        </ul>
-    </li>
-    </ul>
-    </section>
+        <?php get_sidebar(); ?>
 </div>
-<!-- footer -->
-<footer>
-    ショップ情報|ヒストリー
-    <p><small>Copyright: RaiseTech</small></p>
-</footer>
-</body>
-</html>
+<?php get_footer(); ?>

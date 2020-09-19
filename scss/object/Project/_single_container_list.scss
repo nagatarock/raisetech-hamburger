@@ -1,0 +1,27 @@
+.p-single_container_list{
+    font-size:1.2rem ;
+    margin-top: 33px;
+    margin-left: 52px;
+    &1_list{
+        margin-left: 15px;
+    }
+    ol{
+        list-style: none;
+    }
+    ul{
+        list-style: none;
+    }
+&3{
+    &_list{
+        margin-left: 15px;
+    }
+}
+&_zone{
+    background-color:#F5F5F5 ;
+    width: 704px;
+    height: 123px;
+    margin-top: 59px;
+    padding: 26px 26px;
+    font-size: 1rem;
+}
+}

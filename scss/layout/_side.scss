@@ -2,14 +2,10 @@
     width: 20%;
     height: auto;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
     background-color: #F2EDE9;
     padding-left: 2.7%;
     padding-top: 4.5%;
     color: $font-color;
-    @include breakpoint ( tablet ){
-        display: none;
-    }
     .l-sidebar_menu{
         padding-top: 30px;
         font-size: 0.9rem;
@@ -40,4 +36,22 @@
      a{
         text-decoration: none;
      }
+     @include breakpoint ( tablet ){
+        height: 100%;
+        right: -20%;
+        position: fixed;
+        z-index: 100;
+}
+&.is-open{
+    right: 0;
+    top: 0;
+    padding: 0;
+    transition: 0.5s;
+    .l-sidebar_title{
+        display: none;
+    }
+    .l-sidebar_menu{
+        padding-left: 20px;
+    }
+}
     }

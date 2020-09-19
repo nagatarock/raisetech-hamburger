@@ -20,3 +20,61 @@
         margin: 31px auto;        
     }
 }
+.p-sidebar_button{
+    position: absolute;
+    top:9px;
+    right: 13px;
+    z-index: 9999;
+    outline:0;
+    @include breakpoint (pc){
+        display: none;
+    } 
+    &_line{
+        position: absolute;
+        cursor:pointer;
+        top:-300%;
+    &s{
+        position: absolute;
+        top:0;
+        left:0;
+        display: block;
+        width: 20px;
+        height: 3px;
+        background:#000 ;
+        transition:0.5s;
+    }
+        &_1{
+            top:10px;
+        }
+        &_2{
+            top:24px;
+        }
+        &_3{
+            top:38px;
+        }
+}
+&.is-open{
+    top:-1%;
+    right: 3%;
+    margin-left: -25%;
+    transform: 0.5s;
+    h2{
+        display: none;
+    }
+        .p-sidebar_button_line_1{
+        top:               24px;    /* 上から2番目の線の位置に変更 */
+        /*                 線を45度回転  */
+        -webkit-transform: rotate(45deg);
+        transform:         rotate(45deg);
+        }
+        .p-sidebar_button_line_2{
+        opacity:           0;       /* 不透明度を下げて線を消す   */
+        }
+        .p-sidebar_button_line_3{
+        top:               24px;    /* 上から2番目の線の位置に変更 */
+        /*                 線を135度回転 */
+        -webkit-transform: rotate(135deg);
+        transform:         rotate(135deg);
+        }
+}
+}

@@ -1,0 +1,17 @@
+.p-single_container_table{
+    margin-top: 26px;
+    margin-left: 52px;
+    &_item{
+    border-collapse: collapse;
+    th{
+        width: 223px;
+        text-align:left; 
+        padding-left: 16px;
+    }
+    td{
+        width: 483px;
+        height: 40px;
+        padding-left: 16px;
+    }
+    }
+}

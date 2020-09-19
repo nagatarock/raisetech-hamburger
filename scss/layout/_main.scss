@@ -10,102 +10,23 @@ body{
     display: flex;
     width: 100%;
     height: 95%;
+    
 }
 .l-main_wrapper{
     width: 80%;
     height: 100%;
 }
-@include breakpoint (tablet){
-    .p-main_top_pic{
-        width: 125%;
-        height: 15%;
-        .c-main_text{
-            font-size: 1.5rem;
-            top:100px;
-            left: 45px;
-        }
-    }
-}
-@include breakpoint (tablet){
-    .p-main_container{
-    width: 125%;
-    .c-main_container_left{
-        margin-left: 40px;
-        width: 42%;
-        &_box1{
-            width: 93%;
-            height: 25%;
-            top: 46%;
-            h3{
-                font-size: 2rem;
-            p{
-                font-size: 1.6rem;
-            }
-        }
-    }
-        &_box2{
-            width: 93%;
-            height: 25%;
-            top:73%;
-            h3{
-                font-size: 2rem;
-            p{
-                font-size: 1.6rem;
-            }
-        }
-        }
-    }
-    .c-main_container_right{
-        margin-right: 40px;
-        width: 42%;
-        &_box1{
-            width: 93%;
-            height: 25%;
-            top: 46%;
-            h3{
-                font-size: 2rem;
-            p{
-                font-size: 1.6rem;
-                overflow-wrap : break-word;
-            }
-        }
-        }
-        &_box2{
-            width: 93%;
-            height: 25%;
-            top: 73%;
-            h3{
-                font-size: 2rem;
-            p{
-                font-size: 1.6rem;
-            }
-        }
-        }
-    } 
-}
-}
-    @include breakpoint (tablet){
-        .p-main_map{
-            height: 22%;
-            img{
-                width: 125%;
-            }
-            .p-main_map_container{
-                width: 125%;
-                font-size: 2rem;
-                line-height: 2rem;
-                .c-main_map_container_text{
-                font-size: 1.5rem;
-                line-height: 3rem;
-                }
-            }
-        }
-    }
+
+
+
 
 .l-archive_flexbox{
         display: flex;
         width:   100%;
         height:  95%;
+        @include breakpoint (tablet){
+            width: 100%;
+        }
         }
         .l-archive_wrapper{
         width:   80%;

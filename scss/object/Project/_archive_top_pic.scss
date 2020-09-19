@@ -23,4 +23,11 @@
         width: 100%;
         height: 100%;
     }
+    @include breakpoint (tablet){
+        width: 125%;
+        height: 19%;
+        .p-archive_text{
+            font-size: 3.1rem;
+        }
+}
 }
