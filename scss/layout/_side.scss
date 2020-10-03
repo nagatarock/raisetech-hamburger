@@ -6,6 +6,7 @@
     padding-left: 2.7%;
     padding-top: 4.5%;
     color: $font-color;
+    transition: 0.5s;
     .l-sidebar_menu{
         padding-top: 30px;
         font-size: 0.9rem;
@@ -46,7 +47,6 @@
     right: 0;
     top: 0;
     padding: 0;
-    transition: 0.5s;
     .l-sidebar_title{
         display: none;
     }

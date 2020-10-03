@@ -1,3 +1,13 @@
+<?php get_header(); ?>
+<?php
+if( have_posts())://1.投稿データがあるかの条件分岐
+    while( have_posts())://2.表示する投稿データがあれば繰り返し処理開始
+        the_post();//3.ループ処理に必要なカウント処理等
+    endwhile;
+else:
+    ?><p>表示する記事がありません</p><?php
+endif;?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -13,7 +23,7 @@
      <div class="l-single_wrapper">
     <!-- header -->
     <header>
-        <h1>Hamburger</h1>
+        <h1>HamburgerR</h1>
         <form id="l-header_form1" action="#" method="post">
             <input type="text" name="text" class="l-header_search">
             <input type="submit" name="submit" value="検索" class="l-header_button">

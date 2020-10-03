@@ -1,8 +1,8 @@
 <!-- footer -->
 <footer>
     ショップ情報|ヒストリー
-    <p><small>Copyright: RaiseTech</small></p>
+    <p class="footer__copyright"><small>&copy; <?php bloginfo( 'name' ); ?> 2019</small></p>
 </footer>
-<script src="js/sidebar.js"></script>
+<?php wp_footer();?>
 </body>
 </html>
