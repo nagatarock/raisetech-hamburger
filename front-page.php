@@ -1,12 +1,5 @@
 <?php get_header(); ?>
-<?php
-if( have_posts())://1.投稿データがあるかの条件分岐
-    while( have_posts())://2.表示する投稿データがあれば繰り返し処理開始
-        the_post();//3.ループ処理に必要なカウント処理等
-    endwhile;
-else:
-    ?><p>表示する記事がありません</p><?php
-endif;?>
+
             <article class="p-main_top_pic">
                 <div class="p-main_pic">
                 <img src="<?php echo esc_url( get_theme_file_uri('/img/top.png'));?> " alt="TOP画像">
@@ -18,6 +11,7 @@ endif;?>
             <!-- コンテンツ -->
     <div class="p-main_container">
         <section class="p-main_container_left">
+            <a href="<?php echo get_category_link('5');?>">
             <h2>Take Out
                 <p>＿</p>
                 </h2>
@@ -33,6 +27,7 @@ endif;?>
             </div>
         </section> 
         <section class="p-main_container_right">
+        <a href="<?php echo get_category_link('4');?>">
             <h2>Eat In
                 <p>＿</p>
                 </h2>
