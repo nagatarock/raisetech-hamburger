@@ -527,7 +527,7 @@ body {
   padding-left: 10px;
   font-size: 0.7rem;
   list-style-type: none;
-  line-height: 22px;
+  line-height: 2px;
 }
 
 .l-sidebar .l-sidebar_menu .l-sidebar_menu_side {
@@ -535,7 +535,7 @@ body {
   padding-left: 10px;
   font-size: 0.7rem;
   list-style-type: none;
-  line-height: 22px;
+  line-height: 2px;
 }
 
 .l-sidebar .l-sidebar_menu .l-sidebar_menu_drink {
@@ -543,7 +543,7 @@ body {
   padding-left: 10px;
   font-size: 0.7rem;
   list-style-type: none;
-  line-height: 22px;
+  line-height: 2px;
 }
 
 .l-sidebar a {
@@ -1084,7 +1084,7 @@ footer p {
   width: 87%;
   height: 245px;
   background-color: #3C2B1C;
-  margin: 0 auto;
+  margin: 0 auto 15px auto;
 }
 
 .p-archive_container_card1_pic {

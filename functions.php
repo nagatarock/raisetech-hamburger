@@ -3,17 +3,6 @@
     add_theme_support('menus'); //テーマにメニューという項目を機能サポートを許可するという記述
     add_theme_support('title-tag');//タイトルの表示
     add_theme_support( 'post-thumbnails' ); //アイキャッチ画像の設定
-    //タイトル出力
-    function raisetech_title($title){
-        if(is_front_page()&& is_home()){//トップページなら
-            $title = get_bloginfo('name','display');
-        }elseif(is_singular()){//シングルページなら
-        $title = single_post_title(",false");
-    }
-    return $title;
-        }
-        add_filter('pre_get_document_title','raisetech_title');
-
 
     //スタイルシートの読み込み
     function raisetech_script(){
