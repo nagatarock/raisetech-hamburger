@@ -19,6 +19,6 @@
             <span class="p-sidebar_button_lines p-sidebar_button_line_3"></span>
         </div>
             <h2>Menu</h2></button>
-            <a href="<?php echo esc_url( home_url( '/' ) ) ?>"><h1><?php bloginfo('name'); ?></h1></a> <!--ホームページの名前を出力、トップページに戻る-->
+            <h1><a href="<?php echo esc_url( home_url( '/' ) ) ?>"><h1><?php bloginfo('name'); ?></h1></a></h1> <!--ホームページの名前を出力、トップページに戻る-->
         <?php get_search_form(); ?>
     </header>

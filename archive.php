@@ -19,13 +19,14 @@
         <?php if(have_posts()): ?><!--記事があるかを調べ -->
             <?php while(have_posts()): //次の記事があるかを調べ
             the_post(); ?>     <!-- 次の記事を表示する -->
-            <li class="p-archive_container_card1">
-            <div class="p-archive_container_card1_pic">
+            <li class="p-archive_container_card">
+            <div class="p-archive_container_card_pic">
                 <?php if(has_post_thumbnail());?>
                     <?php the_post_thumbnail();?>
-                    <div class="p-archive_container_card1_textbox">
-                <?php the_title(); ?>
-                <?php the_excerpt(); ?>
+                    </div>
+                    <div class="p-archive_container_card_textbox">
+                <h2><?php the_title(); ?></h2>
+                <p><?php the_excerpt(); ?></p>
                 <div class="c-button">
                     <button onclick="location.href='<?php the_permalink(); ?>'">詳しく見る</button>
                 </div>
@@ -33,11 +34,13 @@
             <?php endwhile; //投稿データがない場合
         else:?>
                     <?php endif; ?>
-            </div>
+
 
         </li>
         </ul>
         <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
-        <?php get_sidebar();?>
-    </div>
+        </div>
+        </div>
+        <?php get_sidebar(); ?>
+        </div>
 <?php get_footer();?>
