@@ -11,7 +11,7 @@
             <!-- コンテンツ -->
     <div class="p-main_container">
         <section class="p-main_container_left">
-            <a href="<?php echo get_category_link('5');?>">
+            <a href="<?php echo get_category_link('5');?>"> <!--疑問背景画像にリンクが貼れてない！-->
             <h2>Take Out
                 <p>＿</p>
                 </h2>
@@ -43,6 +43,7 @@
             </div>
         </section> 
         </div>
+</a>
         <!-- 地図 -->
         <section class="p-main_map">   
             <div class="p-main_map_container">

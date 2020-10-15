@@ -1,8 +1,9 @@
 .p-single_container{
     height: 2797px;
     &_topic{
-    margin-top: 35px;
+    margin: 35px;
     margin-left: 52px;
+    margin-right: 52px;
     p{
         margin-top: 33px;
         font-size:1rem ;
@@ -26,7 +27,7 @@
     &_quote{
         background-color: #F5F5F5;
         width: 703px;
-        height: 166px;
+        height: auto;
         blockquote{
             padding: 26px 21px;
         }

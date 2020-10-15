@@ -2,6 +2,10 @@
     position: relative;
     width: 100%;
     height: 8%;
+    .p-single_pic{
+        width: 100%;
+        height: 100%;
+    }
     .p-single_text{
         font-size: 2.1rem;
         color: white;
@@ -11,6 +15,7 @@
     }
     .p-single_pic img{
         width: 100%;
-        height: 100%;
+        height: 260px;
+        object-fit: cover; //画像の切り抜き//
     }
 }

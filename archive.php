@@ -21,14 +21,14 @@
             the_post(); ?>     <!-- 次の記事を表示する -->
             <li class="p-archive_container_card">
             <div class="p-archive_container_card_pic">
-                <?php if(has_post_thumbnail());?>
+                <?php if(has_post_thumbnail());?><!--疑問コーヒーだけ文字レベルの出方が違う！-->
                     <?php the_post_thumbnail();?>
                     </div>
                     <div class="p-archive_container_card_textbox">
                 <h2><?php the_title(); ?></h2>
                 <p><?php the_excerpt(); ?></p>
                 <div class="c-button">
-                    <button onclick="location.href='<?php the_permalink(); ?>'">詳しく見る</button>
+                    <button onclick="location.href='<?php the_permalink(); ?>'">詳しく見る</button><!--疑問詳しく見るボタンの位置が揃っていない-->
                 </div>
             </div>                
             <?php endwhile; //投稿データがない場合
