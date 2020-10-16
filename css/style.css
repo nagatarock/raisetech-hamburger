@@ -412,6 +412,7 @@ header #l-header_form1 .l-header_search {
   width: 206px;
   height: 25px;
   margin-right: 4px;
+  padding-left: 1rem;
   vertical-align: middle;
   /*検索ボタンと高さを揃える*/
 }
@@ -510,6 +511,7 @@ body {
   background-color: #F2EDE9;
   padding-left: 2.7%;
   padding-top: 4.5%;
+  padding-bottom: 1%;
   color: #707070;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1064,7 +1066,7 @@ footer p {
 /*カード*/
 .p-archive_container {
   width: 100%;
-  height: 1039px;
+  height: auto;
 }
 
 .p-archive_container_text {
