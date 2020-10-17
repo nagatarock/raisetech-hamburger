@@ -22,8 +22,8 @@
 }
 .p-sidebar_button{
     position: absolute;
-    top:50px;
-    right: 13px;
+    top:60px;
+    right: 5px;
     z-index: 9999;
     outline:0;
     transform: 0.5s;
@@ -33,7 +33,7 @@
     &_line{
         position: absolute;
         cursor:pointer;
-        top:-300%;
+        top:-400%;
     &s{
         position: absolute;
         top:0;
@@ -58,8 +58,10 @@
     top:50px;
     right: 3%;
     margin-left: -25%;
+    position: fixed;
     h2{
         display: none;
+    }
     }
         .p-sidebar_button_line_1{
         top:               24px;    /* 上から2番目の線の位置に変更 */
@@ -76,5 +78,4 @@
         -webkit-transform: rotate(135deg);
         transform:         rotate(135deg);
         }
-}
 }

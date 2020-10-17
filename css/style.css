@@ -513,8 +513,9 @@ body {
   padding-top: 4.5%;
   padding-bottom: 1%;
   color: #707070;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  z-index: 100;
 }
 
 .l-sidebar .l-sidebar_menu {
@@ -575,6 +576,16 @@ body {
   padding-left: 20px;
 }
 
+.menu-bg.is-open {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
 footer {
   font-size: 1rem;
   width: 100%;
@@ -623,8 +634,8 @@ footer p {
 
 .p-sidebar_button {
   position: absolute;
-  top: 50px;
-  right: 13px;
+  top: 60px;
+  right: 5px;
   z-index: 9999;
   outline: 0;
   -webkit-transform: 0.5s;
@@ -640,7 +651,7 @@ footer p {
 .p-sidebar_button_line {
   position: absolute;
   cursor: pointer;
-  top: -300%;
+  top: -400%;
 }
 
 .p-sidebar_button_lines {
@@ -671,13 +682,14 @@ footer p {
   top: 50px;
   right: 3%;
   margin-left: -25%;
+  position: fixed;
 }
 
 .p-sidebar_button.is-open h2 {
   display: none;
 }
 
-.p-sidebar_button.is-open .p-sidebar_button_line_1 {
+.p-sidebar_button .p-sidebar_button_line_1 {
   top: 24px;
   /* 上から2番目の線の位置に変更 */
   /*                 線を45度回転  */
@@ -685,12 +697,12 @@ footer p {
   transform: rotate(45deg);
 }
 
-.p-sidebar_button.is-open .p-sidebar_button_line_2 {
+.p-sidebar_button .p-sidebar_button_line_2 {
   opacity: 0;
   /* 不透明度を下げて線を消す   */
 }
 
-.p-sidebar_button.is-open .p-sidebar_button_line_3 {
+.p-sidebar_button .p-sidebar_button_line_3 {
   top: 24px;
   /* 上から2番目の線の位置に変更 */
   /*                 線を135度回転 */
@@ -1251,7 +1263,7 @@ footer p {
 }
 
 .p-single_container {
-  height: 2797px;
+  height: auto;
 }
 
 .p-single_container_topic {
