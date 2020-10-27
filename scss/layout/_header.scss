@@ -4,12 +4,18 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: #FFF7EF;
+    overflow: hidden;
     h1{
         font-size: 3rem;
         margin-top: 4.3%; /*marginは親のwidthの%で指定*/
         margin-left: 4.2%;
         font-family: 'Roboto', sans-serif;
         color:$font-color;
+        @include breakpoint (sma){
+            font-size: 4rem;
+            width: auto;
+            height: 8%;
+        }
     }
 #l-header_form1{
     margin-top: 5.5%;
@@ -28,6 +34,9 @@ header{
     margin-right: 4px;
     padding-left: 1rem;
     vertical-align:middle; /*検索ボタンと高さを揃える*/
+    @include breakpoint (sma){
+        height: 30px;
+    }
 }
 .l-header_button{
     font-size: 1rem;
@@ -43,7 +52,7 @@ header{
 }
 }
 @include breakpoint (tablet){
-    width: 125%;
+    width: 100%;
     height: 12%;
     flex-direction: column;
     align-items: center;
@@ -51,5 +60,16 @@ header{
         margin-top: 2.5%;
         margin-bottom: 2.5%;
     }   
+}
+@include breakpoint (sma){
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    #l-header_form1{
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }   
+
 }
 }

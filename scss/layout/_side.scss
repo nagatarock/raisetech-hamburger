@@ -45,6 +45,12 @@
         position: fixed;
         z-index: 100;
 }
+@include breakpoint ( sma ){
+    height: 100%;
+    right: -20%;
+    position: fixed;
+    z-index: 100;
+}
 &.is-open{
     right: 0;
     top: 0;

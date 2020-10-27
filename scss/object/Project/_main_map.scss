@@ -32,14 +32,35 @@
 }
 @include breakpoint (tablet){
     .p-main_map{
-        height: 22%;
         img{
-            width: 125%;
+            width: 100%;
         }
         .p-main_map_container{
-            width: 125%;
+            width: 100%;
             font-size: 2rem;
             line-height: 2rem;
+            .c-main_map_container_text{
+            font-size: 1.5rem;
+            line-height: 3rem;
+            }
+        }
+    }
+}
+@include breakpoint (sma){
+    .p-main_map{
+        width: 100%;
+        height: 691px;
+        img{
+            width: 100%;
+        }
+        .p-main_map_container{
+            width: 100%;
+            font-size: 2rem;
+            line-height: 2rem;
+            @include breakpoint (sma){
+                width: 100%;
+                height: 415px;
+            }
             .c-main_map_container_text{
             font-size: 1.5rem;
             line-height: 3rem;

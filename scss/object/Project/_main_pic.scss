@@ -21,8 +21,18 @@
 }
 @include breakpoint (tablet){
     .p-main_top_pic{
-        width: 125%;
+        width: 100%;
         height: 15%;
+        .c-main_text{
+            font-size: 1.5rem;
+            top:100px;
+            left: 45px;
+        }
+    }
+}
+@include breakpoint (sma){
+    .p-main_top_pic{
+        width: 100%;
         .c-main_text{
             font-size: 1.5rem;
             top:100px;
