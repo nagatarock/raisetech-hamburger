@@ -7,7 +7,7 @@
     padding-top: 4.5%;
     padding-bottom: 1%;
     color: $font-color;
-    transition: 0.2s;
+    transition: 0.5s;
     z-index: 100;
     .l-sidebar_menu{
         padding-top: 30px;
@@ -39,7 +39,7 @@
      a{
         text-decoration: none;
      }
-     @include breakpoint ( tablet ){
+@include breakpoint ( tablet ){
         height: 100%;
         right: -20%;
         position: fixed;
@@ -55,6 +55,14 @@
     right: 0;
     top: 0;
     padding: 0;
+    @include breakpoint ( tablet ){
+        width: 40%;
+        height: 100%;
+}
+    @include breakpoint (sma){
+        width: 50%;
+        height: 100%;
+    }
     .l-sidebar_title{
         display: none;
     }

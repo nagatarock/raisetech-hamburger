@@ -32,6 +32,8 @@
     } 
     @include breakpoint (sma){
         top: 20px;
+        right: 10px;
+        position: fixed;
     }
     &_line{
         position: absolute;
@@ -63,7 +65,8 @@
     margin-left: -25%;
     position: fixed;
     @include breakpoint (sma){
-        
+        top: 5px;
+        right: 30px;
     }
     h2{
         display: none;

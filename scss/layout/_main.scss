@@ -46,6 +46,10 @@ body{
         @include breakpoint (tablet){
             width: 100%;
         }
+        @include breakpoint (sma){
+            display: block;
+            width: 100%;
+        }
         }
         .l-archive_wrapper{
         width:   80%;

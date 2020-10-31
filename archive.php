@@ -3,10 +3,8 @@
                 <div class="p-archive_pic">
                 <img src="<?php echo esc_url( get_theme_file_uri('/img/archive_top_pic.png'));?>" alt="TOP画像">
             <div class="p-archive_text">
-            <?php if(is_category()) : ?>
                 Menu:
-                <?php single_cat_title(); ?>
-<?php endif; ?>
+                <span><?php single_cat_title(); ?></span>
             </div>
             </div>
             </article>
