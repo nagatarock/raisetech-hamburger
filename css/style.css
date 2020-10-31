@@ -727,6 +727,12 @@ footer p {
   margin: 31px auto;
 }
 
+@media (max-width: 640px) {
+  .c-button button {
+    margin: 125px auto;
+  }
+}
+
 .c-single-button button {
   width: 223px;
   height: 54px;
@@ -1317,6 +1323,21 @@ footer p {
   font-size: 0.5rem;
 }
 
+@media (max-width: 640px) {
+  .p-archive_container_card {
+    display: block;
+    height: 585px;
+  }
+  .p-archive_container_card_pic {
+    width: 100%;
+    height: 40%;
+  }
+  .p-archive_container_card_textbox {
+    width: 100%;
+    height: 60%;
+  }
+}
+
 @media (max-width: 768px) and (min-width: 641px) {
   .p-archive_container {
     width: 100%;
@@ -1436,6 +1457,12 @@ footer p {
 .p-archive_search_container_card_textbox h4 {
   margin-left: 32px;
   font-size: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .p-archive_search_container_card {
+    display: block;
+  }
 }
 
 .p-single_top_pic {

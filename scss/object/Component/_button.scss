@@ -7,6 +7,9 @@
     background-color:white ;
     color:black;
     margin: 31px auto;
+    @include breakpoint (sma){
+        margin: 125px auto;
+    }
     }
 }
 .c-single-button{
@@ -17,7 +20,7 @@
         background-color:#F2EDE9 ;
         border:1px solid #707070;
         color:black;
-        margin: 31px auto;        
+        margin: 31px auto;
     }
 }
 .p-sidebar_button{

@@ -26,7 +26,7 @@
                 <h2><?php the_title(); ?></h2>
                 <p><?php the_excerpt(); ?></p>
                 <div class="c-button">
-                    <button onclick="location.href='<?php the_permalink(); ?>'">詳しく見る</button><!--疑問詳しく見るボタンの位置が揃っていない-->
+                    <button onclick="location.href='<?php the_permalink(); ?>'">詳しく見る</button><!--疑問 コーヒーの文字レベルが違うせいで詳しく見るボタンの位置が揃っていない-->
                 </div>
             </div>                
             <?php endwhile; //投稿データがない場合

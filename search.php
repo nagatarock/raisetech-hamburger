@@ -5,7 +5,7 @@
                 <img src="<?php echo esc_url( get_theme_file_uri('/img/archive_top_pic.png'));?>" alt="TOP画像">
             <div class="p-archive_text">
                 Menu:
-                <?php the_search_query(); ?>
+               <span><?php the_search_query(); ?></span> 
             </div>
             </div>
             </article>
