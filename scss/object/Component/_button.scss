@@ -24,7 +24,7 @@
     }
 }
 .p-sidebar_button{
-    position: absolute;
+    position: fixed;
     top:60px;
     right: 5px;
     z-index: 9999;
@@ -41,7 +41,7 @@
     &_line{
         position: absolute;
         cursor:pointer;
-        top:-400%;
+        top:-1000%;
     &s{
         position: absolute;
         top:0;
