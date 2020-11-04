@@ -7,7 +7,7 @@
     ?> 
 </head>
 <!-- body -->
-<body> <?php body_class(); ?>
+<body <?php body_class(); ?>>
 <div class="menu-bg"></div>
     <div class="l-main_flexbox">
      <div class="l-main_wrapper">

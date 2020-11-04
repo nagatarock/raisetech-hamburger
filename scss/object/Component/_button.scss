@@ -6,7 +6,11 @@
     border-radius: 20px;
     background-color:white ;
     color:black;
-    margin: 31px auto;
+    margin: 90px auto 0 auto;
+
+    @include breakpoint (tablet){
+    margin: 25px auto 0 auto;
+    }
     @include breakpoint (sma){
         margin: 125px auto;
     }
@@ -25,7 +29,7 @@
 }
 .p-sidebar_button{
     position: fixed;
-    top:60px;
+    top:20px;
     right: 5px;
     z-index: 9999;
     outline:0;
@@ -63,7 +67,7 @@
         }
 }
 &.is-open{
-    top:50px;
+    top:20px;
     right: 3%;
     margin-left: -25%;
     position: fixed;

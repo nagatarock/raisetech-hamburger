@@ -508,6 +508,10 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 .l-main_flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -724,7 +728,13 @@ footer p {
   border-radius: 20px;
   background-color: white;
   color: black;
-  margin: 31px auto;
+  margin: 90px auto 0 auto;
+}
+
+@media (max-width: 768px) and (min-width: 641px) {
+  .c-button button {
+    margin: 25px auto 0 auto;
+  }
 }
 
 @media (max-width: 640px) {
@@ -745,7 +755,7 @@ footer p {
 
 .p-sidebar_button {
   position: fixed;
-  top: 60px;
+  top: 20px;
   right: 5px;
   z-index: 9999;
   outline: 0;
@@ -798,7 +808,7 @@ footer p {
 }
 
 .p-sidebar_button.is-open {
-  top: 50px;
+  top: 20px;
   right: 3%;
   margin-left: -25%;
   position: fixed;
@@ -1287,7 +1297,6 @@ footer p {
   display: -ms-flexbox;
   display: flex;
   width: 87%;
-  height: 245px;
   background-color: #3C2B1C;
   margin: 0 auto 15px auto;
 }
