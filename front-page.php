@@ -10,8 +10,7 @@
             </article>
             <!-- コンテンツ -->
     <div class="p-main_container">
-        <section class="p-main_container_left">
-            <a href="<?php echo get_category_link('5');?>"> <!--疑問背景画像にリンクが貼れてない！-->
+    <a class="p-main_container_left" href="<?php echo get_category_link('5');?>">
             <h2>Take Out
                 <p>＿</p>
                 </h2>
@@ -25,9 +24,8 @@
                 <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             </h3>
             </div>
-        </section> 
-        <section class="p-main_container_right">
-        <a href="<?php echo get_category_link('4');?>">
+        </a>
+        <a class="p-main_container_right" href="<?php echo get_category_link('4');?>">
             <h2>Eat In
                 <p>＿</p>
                 </h2>
@@ -41,9 +39,8 @@
                 <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             </h3>
             </div>
-        </section> 
+        </a>
         </div>
-</a>
         <!-- 地図 -->
         <section class="p-main_map">   
             <div class="p-main_map_container">

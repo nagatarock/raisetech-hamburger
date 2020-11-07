@@ -728,18 +728,18 @@ footer p {
   border-radius: 20px;
   background-color: white;
   color: black;
-  margin: 90px auto 0 auto;
+  margin: 15rem auto 1rem auto;
 }
 
 @media (max-width: 768px) and (min-width: 641px) {
   .c-button button {
-    margin: 25px auto 0 auto;
+    margin: 5rem auto 1rem auto;
   }
 }
 
 @media (max-width: 640px) {
   .c-button button {
-    margin: 125px auto;
+    margin: 15rem auto 1rem auto;
   }
 }
 
@@ -956,6 +956,10 @@ footer p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 6%;
+}
+
+.p-main_container :hover {
+  opacity: 0.5;
 }
 
 @media (max-width: 640px) {

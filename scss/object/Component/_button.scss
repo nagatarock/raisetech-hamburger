@@ -6,13 +6,13 @@
     border-radius: 20px;
     background-color:white ;
     color:black;
-    margin: 90px auto 0 auto;
+    margin: 15rem auto 1rem auto;
 
     @include breakpoint (tablet){
-    margin: 25px auto 0 auto;
+    margin: 5rem auto 1rem auto;
     }
     @include breakpoint (sma){
-        margin: 125px auto;
+        margin: 15rem auto 1rem auto;
     }
     }
 }
@@ -63,7 +63,7 @@
             top:24px;
         }
         &_3{
-            top:38px;
+            top:38px
         }
 }
 &.is-open{
