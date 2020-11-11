@@ -26,6 +26,13 @@
         </article>
         </article>        
         </div>
+        <?php the_tags('タグ：','|'); ?> <!--タグの表示-->
+        <div class="c-nav-link">
+        <?php the_post_navigation( array(
+                'prev_text'      => '<<%title',
+                'next_text'      => '%title>>',
+        )); ?> <!--前後記事へのリンク-->
+        </div>
         </div>
 <?php get_sidebar();?>
       </div>

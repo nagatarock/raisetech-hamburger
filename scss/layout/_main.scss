@@ -4,6 +4,10 @@ html{
         box-sizing: border-box;
         width: 100%;
     }
+    a{
+        text-decoration: none; //リンクの下線を消す
+        color: $font-color;
+    }
 }
 body{
     width: 100%;
@@ -13,9 +17,6 @@ body{
         box-sizing: border-box;
         width: 100%;
     }
-}
-a{
-    text-decoration: none;
 }
 .l-main_flexbox{
     display: flex;
@@ -38,10 +39,6 @@ a{
         width: 100%;
     }
 }
-
-
-
-
 .l-archive_flexbox{
         display: flex;
         width:   100%;

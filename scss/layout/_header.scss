@@ -11,6 +11,9 @@ header{
         margin-left: 4.2%;
         font-family: 'Roboto', sans-serif;
         color:$font-color;
+            :hover{
+            opacity: 0.5;
+            }
         @include breakpoint (sma){
             font-size: 4rem;
             width: auto;
@@ -48,6 +51,7 @@ header{
     width: 71px;
     height: 25px;
     color:$font-color;
+    cursor: pointer;
     vertical-align:middle; /*検索ボタンと高さを揃える*/
 }
 }

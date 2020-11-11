@@ -7,6 +7,12 @@ footer{
     background-image: url(../img/footer_background.png);
     color:#FFFFFF;
     text-align: center ;
+    a{
+        color:#FFFFFF;
+        :hover{
+            opacity: 0.5;
+        }
+    }
     p{
         transform: scale(0.75);
     }
