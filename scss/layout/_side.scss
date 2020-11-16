@@ -7,7 +7,7 @@
     padding-top: 4.5%;
     padding-bottom: 1%;
     color: $font-color;
-    transition: 0.5s;
+    transition: 0.2s;
     z-index: 100;
     .l-sidebar_menu{
         padding-top: 30px;
@@ -73,7 +73,7 @@
     }
 }
     }
-.menu-bg {
+.menu-bg { //.is-openがついたら背景を暗くする
         &.is-open{
             width: 100%;
             height:100%;

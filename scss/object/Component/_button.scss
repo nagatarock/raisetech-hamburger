@@ -33,14 +33,12 @@
     right: 5px;
     z-index: 9999;
     outline:0;
-    transform: 0.5s;
     @include breakpoint (pc){
         display: none;
     } 
     @include breakpoint (sma){
         top: 20px;
         right: 10px;
-        position: fixed;
     }
     &_line{
         position: absolute;
@@ -54,7 +52,6 @@
         width: 20px;
         height: 3px;
         background:#000 ;
-        transition:0.5s;
     }
         &_1{
             top:10px;

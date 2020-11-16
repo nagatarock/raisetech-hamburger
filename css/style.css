@@ -599,8 +599,8 @@ body {
   padding-top: 4.5%;
   padding-bottom: 1%;
   color: #707070;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   z-index: 100;
 }
 
@@ -774,8 +774,6 @@ footer p {
   right: 5px;
   z-index: 9999;
   outline: 0;
-  -webkit-transform: 0.5s;
-          transform: 0.5s;
 }
 
 @media (min-width: 769px) {
@@ -788,7 +786,6 @@ footer p {
   .p-sidebar_button {
     top: 20px;
     right: 10px;
-    position: fixed;
   }
 }
 
@@ -806,8 +803,6 @@ footer p {
   width: 20px;
   height: 3px;
   background: #000;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .p-sidebar_button_line_1 {
