@@ -32,6 +32,8 @@
                 'prev_text'      => '<<%title',
                 'next_text'      => '%title>>',
         )); ?> <!--前後記事へのリンク-->
+        <?php wp_list_comments(); ?> <!--エラーチェック用の記述 コメント表示のテンプレートタグ-->
+        <?php posts_nav_link(); ?> <!--エラーチェック用の記述 ページネーションのテンプレートタグ-->
         </div>
         </div>
 <?php get_sidebar();?>

@@ -32,8 +32,6 @@
             <?php endwhile; //投稿データがない場合
         else:?>
                     <?php endif; ?>
-
-
         </li>
         </ul>
         <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>

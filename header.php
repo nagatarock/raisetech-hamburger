@@ -21,5 +21,5 @@
         </div>
             <h2>Menu</h2></button>
             <h1><a href="<?php echo esc_url( home_url( '/' ) ) ?>"><h1><?php bloginfo('name'); ?></h1></a></h1> <!--ホームページの名前を出力、トップページに戻る-->
-        <?php get_search_form(); ?>
+        <?php get_search_form(); ?><!--検索フォームの呼び出し関数-->
     </header>

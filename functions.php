@@ -3,6 +3,10 @@
     add_theme_support('menus'); //テーマにメニューという項目を機能サポートを許可するという記述
     add_theme_support('title-tag');//タイトルの表示
     add_theme_support( 'post-thumbnails' ); //アイキャッチ画像の設定
+    load_theme_textdomain( $domain, $path ); //テキストドメインの読み込み
+    if ( ! isset( $content_width ) ) $content_width = 900; //コンテンツの最大幅の指定
+    wp_link_pages( $args ); //記事を数ページに分けた時用のページャー テーマチェック用に記載
+    paginate_comments_links(); //ページ送り用の記述
 
     //スタイルシートの読み込み
     function raisetech_script(){
@@ -39,3 +43,11 @@
             'caption',
         ));
     }
+    
+    //コメント返信ボタンの実装
+    function demo_script() {
+        if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+            wp_enqueue_script( 'comment-reply' );
+        }
+    }
+    add_action( 'wp_enqueue_scripts', 'demo_script' );

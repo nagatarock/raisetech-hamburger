@@ -5,8 +5,14 @@
     <ul class="l-sidebar_menu"> <!--参考サイトhttps://shu-sait.com/wordpress-custom-menu-class/-->
            <?php 
                 wp_nav_menu( array(
-                    'menu' => 'cateogry-menu',
+                    'menu' => 'category-menu',
+                    'theme_location' => 'category-menu'
                 ) ); 
             ?>
+<!--カテゴリーウィジェットの関数 テーマチェック用-->
+<?php if( is_active_sidebar('category_widget')):
+dynamic_sidebar('category_widget');
+endif;
+?>
     </ul>
     </section>

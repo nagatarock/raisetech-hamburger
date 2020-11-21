@@ -1,3 +1,5 @@
+/*tested up to: 5.5.3 どこまで動作確認をしたかの記述*/
+/*Requires PHP: 5.6 テーマが稼働するPHPのバージョンの記述*/
 /*
 Theme Name: RAISETECH
 Description: テーマ開発練習用テーマ
@@ -8,7 +10,7 @@ Author URI: https://nagatarockblog.com/wp-admin/index.php
 Tags: right-sidebar, blog
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Text Domain: RAISETECG
+Text Domain: RAISETECH
 */
 
 
