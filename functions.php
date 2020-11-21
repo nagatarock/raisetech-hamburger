@@ -1,6 +1,6 @@
 <?php //締めタグは不要
     //テーマサポート
-    add_theme_support('menus'); //テーマにメニューという項目を機能サポートを許可するという記述
+    register_nav_menus(); //メニューの表示
     add_theme_support('title-tag');//タイトルの表示
     add_theme_support( 'post-thumbnails' ); //アイキャッチ画像の設定
     load_theme_textdomain( $domain, $path ); //テキストドメインの読み込み
