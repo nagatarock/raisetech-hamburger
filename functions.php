@@ -3,10 +3,20 @@
     register_nav_menus(); //メニューの表示
     add_theme_support('title-tag');//タイトルの表示
     add_theme_support( 'post-thumbnails' ); //アイキャッチ画像の設定
+    add_theme_support( 'automatic-feed-links' );//headタグ内のフィードのリンク
+    add_theme_support( "custom-header"); //ヘッダーをカスタムする設定
+    add_theme_support( "custom-background"); //テーマで背景画像を設定する
+    add_editor_style(); //エディタの内容を投稿の出力結果と同じようにする 
     load_theme_textdomain( $domain, $path ); //テキストドメインの読み込み
     if ( ! isset( $content_width ) ) $content_width = 900; //コンテンツの最大幅の指定
     wp_link_pages( $args ); //記事を数ページに分けた時用のページャー テーマチェック用に記載
     paginate_comments_links(); //ページ送り用の記述
+    wp_body_open(); //body要素の直後に何かを挿入する際に使用するアクションを実行する記述           
+    comments_template(); //エラーチェック用 コメントテンプレートを読み込む
+    comment_form(); //エラーチェック用 コメントフォームを読み込み
+    wp_list_comments(); //エラーチェック用の記述 コメント表示のテンプレートタグ
+    posts_nav_link(); //エラーチェック用の記述 ページネーションのテンプレートタグ
+
 
     //スタイルシートの読み込み
     function raisetech_script(){

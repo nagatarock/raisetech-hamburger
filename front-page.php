@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<!--<?php post_class(); ?>テーマチェック用 投稿idなどにclassを付与する記述-->
             <article class="p-main_top_pic">
                 <div class="p-main_pic">
                 <img src="<?php echo esc_url( get_theme_file_uri('/img/top.png'));?> " alt="TOP画像">
