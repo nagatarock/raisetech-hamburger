@@ -16,6 +16,10 @@
     comment_form(); //エラーチェック用 コメントフォームを読み込み
     wp_list_comments(); //エラーチェック用の記述 コメント表示のテンプレートタグ
     posts_nav_link(); //エラーチェック用の記述 ページネーションのテンプレートタグ
+    function raisetech_theme_setup(){
+        load_theme_textdomain( 'raisetech', get_template_directory() . '/languages' );
+        }
+    add_action( 'after_setup_theme', 'raisetech_theme_setup' );//翻訳ファイルの読み込み記述
 
 
     //スタイルシートの読み込み
